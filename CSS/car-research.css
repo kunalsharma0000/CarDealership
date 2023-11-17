@@ -1,0 +1,167 @@
+
+.car-research-section{
+    padding: 40px 0px 40px 0px ;
+}
+.research-heading{
+margin-bottom: 30px;
+text-align: center;
+}
+.car-headings h1{
+    font-size: 34px;
+    text-align: center;
+    color: #242424;
+  margin-bottom: 60px;
+  font-weight: 600;
+}
+.car_researchform {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .custom-select{
+    color: #4A4F54;
+    padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 11px;
+  padding-right: 30px;
+  display: inline-block;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-appearance: none;
+  background: url("../Image/icons8-dropdown-48.png") white;
+  background-repeat: no-repeat;
+  background-position: 95% 50%;
+  background-size: 10px 10px;
+  height: 55px;
+  line-height: 53px;
+  font-size: 13px;
+  width: 100%;
+  border-radius: .25rem;
+  border: 1px solid #ced4da;
+  outline: 0;
+  }
+  .themeBtn:disabled {
+    cursor: not-allowed;
+    opacity: .55;
+  }
+.themeBtn {
+    display: block;
+    padding: 0;
+    background-color: #0069bf;
+    color: #fff;
+    border: 1px solid #0069bf;
+    text-transform: capitalize;
+    text-align: center;
+    position: relative;
+    letter-spacing: 1px;
+    border-radius: .25rem;
+    transition: 0.5s ease-in-out;
+    height: 55px;
+    line-height: 53px;
+    width: 100%;
+  }
+  .car-headings h2{
+  font-size: 35px;
+  text-align: center;
+  padding-top: 80px;
+  font-weight: 600;
+  color: #242424;
+  padding-bottom: 50px;
+
+  }
+
+  .review{
+    display: block;
+    box-shadow: 0 4px 4px #00000040;
+    border-radius: 3px;
+  }
+  .review .review_img {
+    height: 200px;
+    position: relative;
+  }
+  a.review{
+    text-decoration: none;
+  }
+
+  .review-category{
+    position: absolute;
+  /* bottom: 0; */
+  left: 15px;
+  /* top:167px; */
+  background-color: #0069bf;
+  color: white;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  line-height: 25px;
+  word-wrap: anywhere;
+  padding: 0 10px;
+  }
+
+  .review-details{
+    padding: 0 20px 20px;
+  }
+  .review-block-title{
+    font-size: 15px;
+  font-weight: 600;
+  color: #4A4F54;
+  display: block;
+  padding-top: 15px;
+  min-height: 60px;
+  }
+  .review-block-para{
+    color: #4A4F54;
+  padding: 10px 0;
+  margin: 10px 0;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  }
+  .author{
+    color: #4A4F54;
+  font-weight: 500;
+  font-size: 13px;
+  }
+
+  a.reviewblock-btn{
+    text-decoration: none;
+  }
+  a:hover{
+    color: white;
+  }
+
+  .reviewblock-btn{
+    display: inline-block;
+  background-color: #0069bf;
+  color: white;
+  border: 1px solid #0069bf;
+  text-transform: capitalize;
+  text-align: center;
+  position: relative;
+  letter-spacing: 1px;
+  border-radius: .25rem;
+  padding: 15px;
+  font-size: 15px;
+  transition: 0.5s ease-in-out;
+  text-decoration: none;
+  }
+
+
+  @media screen and (max-width:576px) {
+    .car-headings h1{
+        font-size: 25px;
+       
+    }
+    .car-headings h2{
+        font-size: 20px;
+    }
+  }
+  @media screen and (max-width:992px) {
+    
+    .custom-select{
+      margin-bottom: 10px;
+    }
+
+  }

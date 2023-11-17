@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Car Dealerships</title>
+    <link rel="stylesheet" href="./CSS/bootstrap.css">
+    <link rel="stylesheet" href="./CSS/bootstrap5.css">
+    <script src="./Javascript/bootstrap5.js"></script>
+    <script src="./Javascript/jquery.js"></script>
+    <script src="./Javascript/poper.js"></script>
+    <script src="./Javascript/bootstrap.js"></script>
+    <script src="./Javascript/script.js"></script>
+    <link rel="stylesheet" href="./CSS/Style.css">
+    <link rel="stylesheet" href="./CSS/sell.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+
+</head>
+
+<body id="body">
+    <header class="site-header">
+        <div class="container-mid">
+            <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand" href="index.html">
+                    <img class="img-fluid" src="./Image/cardealerships.webp" alt="logo Ahhpc" href="index.html">
+                </a>
+
+                <div class="location-section" id="button">
+                    
+                    <span class="location">
+                        <img class="img-fluid" src="./Image/icons8-location-50.png" alt="">
+                    </span>
+                    <span>Delhi ,IA</span>
+                </div>
+
+                <button onclick="overflowhidden()" class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around ml-auto "
+                    type="button" data-toggle="collapse" data-target="#myname" aria-expanded="false"
+                    aria-label="Toggle navigation" id="button">
+                    <span class="toggler-icon top-bar text-center"></span>
+                    <span class="toggler-icon middle-bar text-center"></span>
+                    <span class="toggler-icon bottom-bar text-center"></span>
+                </button>
+
+                <div class="collapse navbar-collapse " id="myname">
+                    <ul class="navbar-nav  ml-auto text-center">
+                        <li class="nav-item "><a class="nav-link active drop-item " href="index.html">Home</a></li>
+                        <li class="nav-item drop-menu"><a class="nav-link  drop-items" href="sale.html">Cars For
+                                Sale</a></li>
+                        <li class="nav-item drop-menu"><a class="nav-link  drop-items" href="cardealer.html">Car Dealers</a></li>
+                        <li class="nav-item drop-menu"><a class="nav-link  drop-items" href="carsearch.html">Car Research</a></li>
+                        <li class="nav-item drop-menu"><a class="nav-link  drop-items" href="sell.html">Sell My Car</a></li>
+                        <li class="nav-item drop-menu"><a class="nav-link  drop-items" href="#">Blog</a></li>
+                        <button class="nav-wishlist-btn" data-action="openWishlistSlide">
+                            <img class="img-fluid"
+                                src="https://storage.googleapis.com/global-slt/classifieds-assets/images/wishlist.svg"
+                                alt="Vechile-Whislist">
+                            <span>0</span>
+                        </button>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+    </header>
+
+    <section class="sell-section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-lg-12 col-sm-12 text-center">
+                    <div class="sell-heading">
+                        <h1>Sell My Car For Cash</h1>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-12">
+                    <div class="sell-car-image">
+                        <img class="img-fluid" src="./Image/sell 1.webp" alt="Sell Car" title="sell car">
+                        <img class="img-fluid" src="./Image/sell2.webp" alt="sell car" title="sell car">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <div class="sell-car-section">
+        <div class="container-mid">
+            <div class="row">
+                <div class="col-12 col-lg-12 col-sm-12">
+                    <div class="search-form">
+                        <p>Enter your  vehicle imformation</p>
+                        <ul class="nav nav-pills justify-content-center">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-toggle="pill" href="#vehicle_lincense">License Plate</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="pill" href="#vehicle_vin">VIN</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div id="vehicle_lincense" class="tab-pane active">
+                                <form action="">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" name="license_plate">
+                                        <label for="" class="wizrd-form">License Plate</label>
+                                    </div>
+
+                                    <div class="form-group select2-design text-center">
+                                        <select name="" id="" class="text-center">
+                                            <option value="Al">Alabama</option>
+                                            <option value="Al">Alaska</option>
+                                            <option value="Al">America Samao</option>
+                                            <option value="Al">Arizona</option>
+                                            <option value="Al">Arkansa</option>
+                                            <option value="Al">Californai</option>
+                                            <option value="Al">colrado</option>
+                                            <option value="Al">connecticut</option>
+                                            <option value="Al">Delaware</option>
+                                            <option value="Al">District of Columbia</option>
+                                            <option value="Al">florida</option>
+                                            <option value="Al">Indians</option>
+                                            <option value="Al">Georgia</option>
+                                            <option value="Al">New Jersey</option>
+                                        </select>
+                                        <label for="" class="wizard-form-select-label">Select States</label>
+                                    </div>
+
+                                    <div class="form-group mb-0">
+                                        <button class="ares-themebtn" type="submit">Get Started</button>
+                                    </div>
+
+                                </form>
+                                
+                            </div>
+
+                            <div id="vehicle_vin" class="tab-pane " >
+                                <p class="vechicle">You Can find your VIN on your car registration or driver's side door frame</p>
+                                <form action="">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" name="vin">
+                                        <label for="vin" class="wizard-form-text-label">VIN</label>
+                                    </div>
+                                    <div class="form-group mb-0">
+                                        <button class="ares-themebtn" type="submit">Get Started</button>
+                                    </div>
+                                </form>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+<!--  -->
+
+
+<section class="selling-car-section" >
+<div class="container-mid">
+    <div class="row">
+        <div class="col-12 col-sm-12">
+            <div class="main-heading text-center mb-4">
+                <h2>Tips For Selling car in different states</h2>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-sm-12 col-md-4 col-lg-2">
+            <a href="" class="sellCar_blog">Alabama
+                <span class="fa-fa-angle-double-right"></span>
+            </a>
+
+        </div>
+        <div class="col-12 col-sm-12 col-md-4 col-lg-2">
+            <a href="" class="sellCar_blog">Alaska
+                <span class="fa-fa-angle-double-right"></span>
+            </a>
+
+        </div>
+        <div class="col-12 col-sm-12 col-md-4 col-lg-2">
+            <a href="" class="sellCar_blog">Arizona
+                <span class="fa-fa-angle-double-right"></span>
+            </a>
+
+        </div>
+        <div class="col-12 col-sm-12 col-md-4 col-lg-2">
+            <a href="" class="sellCar_blog">Arkansas
+                <span class="fa-fa-angle-double-right"></span>
+            </a>
+
+        </div>
+        <div class="col-12 col-sm-12 col-md-4 col-lg-2">
+            <a href="" class="sellCar_blog">califonia
+                <span class="fa-fa-angle-double-right"></span>
+            </a>
+
+        </div>
+        <div class="col-12 col-sm-12 col-md-4 col-lg-2">
+            <a href="" class="sellCar_blog">colorado
+                <span class="fa-fa-angle-double-right"></span>
+            </a>
+
+        </div>
+        <div class="col-12 col-sm-12 col-md-4 col-lg-2">
+            <a href="" class="sellCar_blog">connecticut
+                <span class="fa-fa-angle-double-right"></span>
+            </a>
+
+        </div>
+        <div class="col-12 col-sm-12 col-md-4 col-lg-2">
+            <a href="" class="sellCar_blog">delaware
+                <span class="fa-fa-angle-double-right"></span>
+            </a>
+
+        </div>
+        <div class="col-12 col-sm-12 col-md-4 col-lg-2">
+            <a href="" class="sellCar_blog">Florida
+                <span class="fa-fa-angle-double-right"></span>
+            </a>
+
+        </div>
+        <div class="col-12 col-sm-12 col-md-4 col-lg-2">
+            <a href="" class="sellCar_blog">Georgia
+                <span class="fa-fa-angle-double-right"></span>
+            </a>
+
+        </div>
+        <div class="col-12 col-sm-12 col-md-4 col-lg-2">
+            <a href="" class="sellCar_blog">Hawaii
+                <span class="fa-fa-angle-double-right"></span>
+            </a>
+
+        </div>
+        <div class="col-12 col-sm-12 col-md-4 col-lg-2">
+            <a href="" class="sellCar_blog">Idaho
+                <span class="fa-fa-angle-double-right"></span>
+            </a>
+
+        </div>
+        <div class="col-12 col-sm-12 col-md-4 col-lg-2">
+            <a href="" class="sellCar_blog">Illinois
+                <span class="fa-fa-angle-double-right"></span>
+            </a>
+
+        </div>
+        <div class="col-12 col-sm-12 col-md-4 col-lg-2">
+            <a href="" class="sellCar_blog">Indians
+                <span class="fa-fa-angle-double-right"></span>
+            </a>
+
+        </div>
+        <div class="col-12 col-sm-12 col-md-4 col-lg-2">
+            <a href="" class="sellCar_blog">Lowa
+                <span class="fa-fa-angle-double-right"></span>
+            </a>
+
+        </div>
+        <div class="col-12 col-sm-12 col-md-4 col-lg-2">
+            <a href="" class="sellCar_blog">Kansas
+                <span class="fa-fa-angle-double-right"></span>
+            </a>
+
+        </div>
+        <div class="col-12 col-sm-12 col-md-4 col-lg-2">
+            <a href="" class="sellCar_blog">kentucky
+                <span class="fa-fa-angle-double-right"></span>
+            </a>
+
+        </div>
+        <div class="col-12 col-sm-12 col-md-4 col-lg-2">
+            <a href="" class="sellCar_blog">Louisana
+                <span class="fa-fa-angle-double-right"></span>
+            </a>
+
+        </div>
+        <div class="col-12 col-sm-12 col-md-4 col-lg-2">
+            <a href="" class="sellCar_blog">Maine
+                <span class="fa-fa-angle-double-right"></span>
+            </a>
+
+        </div>
+        <div class="col-12 col-sm-12 col-md-4 col-lg-2">
+            <a href="" class="sellCar_blog">New York
+                <span class="fa-fa-angle-double-right"></span>
+            </a>
+
+        </div>
+        <div class="col-12 col-sm-12 col-md-4 col-lg-2">
+            <a href="" class="sellCar_blog">North Carolina
+                <span class="fa-fa-angle-double-right"></span>
+            </a>
+
+        </div>
+        <div class="col-12 col-sm-12 col-md-4 col-lg-2">
+            <a href="" class="sellCar_blog">Ohio
+                <span class="fa-fa-angle-double-right"></span>
+            </a>
+
+        </div>
+        <div class="col-12 col-sm-12 col-md-4 col-lg-2">
+            <a href="" class="sellCar_blog">oklahoma
+                <span class="fa-fa-angle-double-right"></span>
+            </a>
+
+        </div>
+        <div class="col-12 col-sm-12 col-md-4 col-lg-2">
+            <a href="" class="sellCar_blog">Texas
+                <span class="fa-fa-angle-double-right"></span>
+            </a>
+
+        </div>
+        <div class="col-12 col-sm-12 col-md-4 col-lg-2">
+            <a href="" class="sellCar_blog">Washington
+                <span class="fa-fa-angle-double-right"></span>
+            </a>
+
+        </div>
+
+    </div>
+</div>
+</section>
+
+
+<!--  -->
+
+
+<section class="faq-section" >
+    <div class="container-mid">
+        <div class="row">
+            <div class="col-12 col-sm-12">
+            <div class="main-heading text-center mb-4">
+                <h2>Frequently Asked Question</h2>
+            </div>
+            </div>
+        </div>
+        <div class="row">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item mb-3 ">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          Lorem ipsum dolor sit amet.?
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item mb-3">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                         Lorem ipsum dolor sit amet.?
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item mb-3 ">
+                      <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Lorem ipsum dolor sit amet.?
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item mb-3 ">
+                        <h2 class="accordion-header" id="headingFourth">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFourth" aria-expanded="false" aria-controls="collapseFourth">
+                           Lorem ipsum dolor sit amet.?
+                          </button>
+                        </h2>
+                        <div id="collapseFourth" class="accordion-collapse collapse" aria-labelledby="headingFourth" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item mb-3">
+                        <h2 class="accordion-header" id="headingfive">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefive" aria-expanded="false" aria-controls="collapsefive">
+                            Lorem ipsum dolor sit amet.?
+                          </button>
+                        </h2>
+                        <div id="collapsefive" class="accordion-collapse collapse" aria-labelledby="headingfive" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+        </div>
+    </div>
+
+</section>
+
+
+<!-- footer -->
+
+
+
+<footer class="footer_area">
+    <div class="container-mid">
+        <div class="row">
+
+            <div class="col-xl-3  col-md-3 col-lg-3">
+                <div class="single-footer-widget ">
+
+                    <h6 class="widget-title">Buying & Selling</h6>
+
+                    <div class="footer_menu">
+                        <nav>
+                            <ul>
+                                <li class="menu-item"><a href="#">Home</a></li>
+                                <li><a href="#">Car For Sale</a></li>
+                                <li><a href="#">Sell My car</a></li>
+                                <li><a href="#">Car Research</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3  col-md-3 col-lg-3">
+                <div class="single-footer-widget ">
+
+                    <h6 class="widget-title">Our Company</h6>
+
+                    <div class="footer_menu">
+                        <nav>
+                            <ul>
+                                <li><a href="#">Claim your Dealership</a></li>
+                                <li><a href="#">Advertise with us</a></li>
+                                <li><a href="#">Manage your Dealership</a></li>
+                                <li><a href="#">Contact & Support</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-3  col-md-3 col-lg-3">
+                <div class="single-footer-widget">
+
+                    <h6 class="widget-title">Dealership</h6>
+
+                    <div class="footer_menu">
+                        <nav>
+                            <ul>
+                                <li><a href="#">Find Car Dealership By Make</a></li>
+                                <li><a href="#">Find Car Dealership By State</a></li>
+                                <li><a href="#">Find Car Dealership Near Me</a></li>
+
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-3  col-md-3 col-lg-3 ">
+                <div class="single-footer-widget ">
+
+                    <h6 class="widget-title">Terms & Privacy Policy</h6>
+
+                    <div class="footer_menu">
+                        <nav>
+                            <ul>
+                                <li><a href="#">Accessibility Statement</a></li>
+                                <li><a href="#">CCPA Privacy Notice</a></li>
+                                <li><a href="#">Privacy Statement</a></li>
+                                <li><a href="#">Shine the Light</a></li>
+                                <li><a href="#">Terms and Conditions</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+
+
+
+</footer>
+<div class="copywrite-section">
+    <div class="container-mid">
+        <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                <div class="copywrite-content text-center">
+                    <p>
+                        © and ™ Car Dealerships, Inc. All rights reserved. Vehicle photos © Evox Images © VinQuery
+                        Solutions, © DataOne, © VinAudit, © ip-api.com
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

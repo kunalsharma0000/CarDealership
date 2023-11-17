@@ -1,0 +1,2932 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <title>Car Dealerships</title>
+    <link rel="stylesheet" href="./CSS/bootstrap.css">
+    <script src="./Javascript/jquery.js"></script>
+    <script src="./Javascript/poper.js"></script>
+    <script src="./Javascript/bootstrap.js"></script>
+    <script src="./Javascript/script.js"></script>
+    <script src="https://kit.fontawesome.com/3a9051686c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./CSS/Style.css">
+    <link rel="stylesheet" href="./CSS/sale.css">
+    <link rel="stylesheet" href="https://fontawesome.com/icons/arrow-right?f=classic&s=solid">
+
+
+
+</head>
+
+<body id="body">
+    <header class="site-header">
+        <div class="container-mid">
+            <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand" href="index.html">
+                    <img class="img-fluid" src="./Image/cardealerships.webp" alt="logo Ahhpc" href="index.html">
+                </a>
+
+                <div class="location-section" id="button">
+                    <span class="location">
+                        <img class="img-fluid" src="./Image/icons8-location-50.png" alt="">
+                    </span>
+                    <span>Delhi ,IA</span>
+                </div>
+
+                <button onclick="overflowhidden()" class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around ml-auto "
+                    type="button" data-toggle="collapse" data-target="#myname" aria-expanded="false"
+                    aria-label="Toggle navigation" id="button">
+                    <span class="toggler-icon top-bar text-center"></span>
+                    <span class="toggler-icon middle-bar text-center"></span>
+                    <span class="toggler-icon bottom-bar text-center"></span>
+                </button>
+
+                <div class="collapse navbar-collapse " id="myname">
+                    <ul class="navbar-nav  ml-auto text-center">
+                        <li class="nav-item "><a class="nav-link active drop-item " href="index.html">Home</a></li>
+                        <li class="nav-item drop-menu"><a class="nav-link  drop-items" href="sale.html">Cars For
+                                Sale</a></li>
+                        <li class="nav-item drop-menu"><a class="nav-link  drop-items" href="cardealer.html">Car Dealers</a></li>
+                        <li class="nav-item drop-menu"><a class="nav-link  drop-items" href="carsearch.html">Car Research</a></li>
+                        <li class="nav-item drop-menu"><a class="nav-link  drop-items" href="sell.html">Sell My Car</a></li>
+                        <li class="nav-item drop-menu"><a class="nav-link  drop-items" href="#">Blog</a></li>
+                        <button class="nav-wishlist-btn" data-action="openWishlistSlide">
+                            <img class="img-fluid"
+                                src="https://storage.googleapis.com/global-slt/classifieds-assets/images/wishlist.svg"
+                                alt="Vechile-Whislist">
+                            <span>0</span>
+                        </button>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- section 1  -->
+
+    <section class="page-title">
+
+        <div class="container-mid">
+            <div class="row">
+                <div class="col-12 col-lg-8 col-sm-12 col-md-7 page-section ">
+                    <h1>Find New & Used Cars For Sale Online</h1>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- section 2  -->
+
+
+    <section class="filter-search-section">
+        <div class="container-mid">
+            <div class="search-filter-mobileViewOuter">
+                <div>
+                    <div class="search-filter-mobileView">
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                                <div class="page-filter">
+                                    <form>
+
+                                        <div class="page-design">
+
+                                            <div class="form-control-filter">
+
+                                                <select class="search-filter" name="condition" id="" data-fit="select"
+                                                    data-filter="vehicle-inventory" data-placeholder="New & Used Cars">
+                                                    <option value="">New & Used Cars</option>
+                                                    <option value="">New Cars</option>
+                                                    <option value="">Used Cars</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="form-control-filter">
+
+                                                <select class="search-filter" name="brand" id="" data-fit="select"
+                                                    data-filter="vehicle-inventory" data-placeholder="All Makes">
+                                                    <option value="">All Makes</option>
+                                                    <option value="acura">Acura</option>
+                                                    <option value="alfa-romeo">alfa-romeo</option>
+                                                    <option value="aston-martain">aston-martin</option>
+                                                    <option value="audi">audi</option>
+                                                    <option value="bently">bently</option>
+                                                    <option value="bmw">bmw</option>
+                                                    <option value="buick">buick</option>
+                                                    <option value="cardillac">cardillac</option>
+                                                    <option value="chevorlt">chevrolet</option>
+                                                    <option value="acura">Chrysler</option>
+                                                    <option value="dodge">Dodge</option>
+                                                    <option value="ferrari">Ferrari</option>
+                                                    <option value="fiat">fiat</option>
+                                                    <option value="ford">ford</option>
+                                                    <option value="genesis">genesis</option>
+                                                    <option value="gmc">gmc</option>
+                                                    <option value="honda">honda</option>
+                                                    <option value="hummer">hummer</option>
+                                                    <option value="hyundai">hyundai</option>
+                                                    <option value="infiniti">infiniti</option>
+                                                    <option value="isuzu">isuzu</option>
+                                                    <option value="jagur">jagur</option>
+                                                    <option value="Jeep">Jeep</option>
+                                                    <option value="kia">kia</option>
+                                                    <option value="lamborgini">lamborini</option>
+                                                    <option value="land-rover">land-rover</option>
+                                                    <option value="lexus">lexus</option>
+                                                    <option value="lincoln">Lincoln</option>
+                                                    <option value="lotus">lotus</option>
+                                                    <option value="volvo">Volvo</option>
+                                                    <option value="maserati">maserati</option>
+                                                    <option value="mazda">mazda</option>
+                                                    <option value="mercury">Mercury</option>
+                                                    <option value="mercedes-benz">Mercedes-benz</option>
+                                                    <option value="mini">mini</option>
+                                                    <option value="plymouth">plymouth</option>
+                                                    <option value="Ram">Ram</option>
+                                                    <option value="Saab">Saab</option>
+                                                    <option value="Toyota">Toyota</option>
+                                                    <option value="Tesla">Tesla</option>
+
+                                                </select>
+                                            </div>
+
+                                            <div class="form-control-filter">
+
+                                                <select class="search-filter" name="modal" id="" data-fit="select"
+                                                    data-filter="vehicle-inventory" data-placeholder="All Models">
+                                                    <option value="">All Models</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="form-control-filter">
+
+                                                <select class="search-filter" name="modal" id="" data-fit="select"
+                                                    data-filter="vehicle-inventory" data-placeholder="All Trims">
+                                                    <option value="">All Trims</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="form-control-filter">
+
+                                                <select class="search-filter" name="year" id="" data-fit="select"
+                                                    data-filter="vehicle-inventory" data-placeholder="All Years">
+                                                    <option value="">All Years</option>
+                                                    <option value="2024">2024</option>
+                                                    <option value="2023">2023</option>
+                                                    <option value="2023">2022</option>
+                                                    <option value="2023">2021</option>
+                                                    <option value="2023">2020</option>
+                                                    <option value="2023">2019</option>
+                                                    <option value="2023">2018</option>
+                                                    <option value="2023">2017</option>
+                                                    <option value="2023">2016</option>
+                                                    <option value="2023">2015</option>
+                                                    <option value="2023">2014</option>
+                                                    <option value="2023">2013</option>
+                                                    <option value="2023">2012</option>
+                                                    <option value="2023">2011</option>
+                                                    <option value="2023">2010</option>
+                                                    <option value="2023">2009</option>
+                                                    <option value="2023">2008</option>
+                                                    <option value="2023">2007</option>
+                                                    <option value="2023">2006</option>
+                                                    <option value="2023">2005</option>
+                                                    <option value="2023">2004</option>
+                                                    <option value="2023">2003</option>
+                                                    <option value="2023">2002</option>
+                                                    <option value="2023">2001</option>
+                                                    <option value="2023">2000</option>
+                                                    <option value="2023">1999</option>
+                                                    <option value="2023">1998</option>
+                                                    <option value="2023">1997</option>
+                                                    <option value="2023">1996</option>
+                                                    <option value="2023">1995</option>
+                                                    <option value="2023">1994</option>
+                                                    <option value="2023">1993</option>
+                                                    <option value="2023">1992</option>
+                                                    <option value="2023">1991</option>
+                                                    <option value="2023">1990</option>
+
+
+                                                </select>
+                                            </div>
+
+
+                                            
+                                        <div class="form-control-filter">
+                                            <div class="dropdown">
+                                                <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
+                                                    price
+                                                </button>
+                                                <div class="dropdown-menu dropdown-menu-right" style="position: absolute; transform: translate3d(-180px, -182px 0px); top: 0; left: 0; will-change: transform;">
+                                                    <div class="filter-input" data-input="mileage_slider">
+                                                        <div
+                                                            class="slider ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content">
+                                                            <div
+                                                                class="ui-slider-range ui-corner-all ui-widget-header">
+                                                            </div>
+                                                            <span
+                                                                class="ui-slider-handle ui-corner-all ui-state-default"></span>
+                                                            <span
+                                                                class="ui-slider-handle ui-corner-all ui-state-default"
+                                                                style="left:96%;"></span>
+
+                                                        </div>
+                                                        <div class="d-flex justify-content-between">
+                                                            <div class="minMilesBox vehicleRangeSlider">
+                                                                <input type="text" value="1" name=""
+                                                                    id="minMiles">
+                                                            </div>
+                                                            <div class="maxMilesBox vehicleRangeSlider">
+                                                                <input type="text" value="100000" name=""
+                                                                    id="maxMiles">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="dropdown-box">
+                                                        <div class="dropdown-box-inner">
+                                                            <p class="dropdown-box-title">Min Mileage</p>
+                                                            <p id="min_mileage_text"
+                                                                class="dropdown-box-text pl-2">0</p>
+                                                        </div>
+
+                                                        <div class="dropdown-box-inner">
+                                                            <p class="dropdown-box-title text-right">Max Mileage
+                                                            </p>
+                                                            <p id="max_mileage_text"
+                                                                class="dropdown-box-text pl-2">100000</p>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="vehicle-image-filter" style="margin-top: 25px; padding-top: 20px; border-top: 1px solid#ddd;">
+                                                    <p>Include Listing  Without Available Price </p>
+                                                    <div class="image-switcher">
+                                                        <label class="switch" for="">
+                                                            <span class="slider round"></span>
+                                                        </label>
+                                                    </div>
+                                                    </div>
+
+                                                </div>
+
+                                                 </div>
+                                            </div>
+                                       
+
+
+
+
+
+
+                                            <div class="form-control-filter">
+                                                <div class="dropdown">
+                                                    <button class="btn dropdown-toggle" type="button"
+                                                        data-toggle="dropdown">More Filters</button>
+
+                                                    <div class="dropdown-menu dropdown-menu-right more-filters-scroll"
+                                                        x-placement="top-end"
+                                                        style="position: absolute; transform: translate3d(-179px, -182px, 0px); top: 0px; left: 0px; will-change: transform;">
+
+                                                        <div class="more-filters-list">
+                                                            <p>Search By Transmission</p>
+                                                            <div class="transmission-filters">
+                                                                <div class="check-filter">
+                                                                    <label class="control-label"
+                                                                        for="transmission_automatic">
+                                                                        <input id="transmission_automatic"
+                                                                            type="checkbox" value="automatic"
+                                                                            data-fit="checkbox"
+                                                                            data-filter="vehicle-inventory">
+                                                                        <span class="check-filter-mark"></span>
+                                                                        <span class="check-filter-text">Automatic</span>
+                                                                    </label>
+                                                                </div>
+
+                                                                <div class="check-filter">
+                                                                    <label class="control-label"
+                                                                        for="transmission_automatic">
+                                                                        <input id="transmission_automatic"
+                                                                            type="checkbox" value="automatic"
+                                                                            data-fit="checkbox"
+                                                                            data-filter="vehicle-inventory">
+                                                                        <span class="check-filter-mark"></span>
+                                                                        <span class="check-filter-text">Manual</span>
+                                                                    </label>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+
+
+
+                                                        <div class="more-filters-list">
+                                                            <p>Search By Drivetrain</p>
+                                                            <div class="transmission-filters">
+                                                                <div class="check-filter">
+                                                                    <label class="control-label"
+                                                                        for="transmission_automatic">
+                                                                        <input id="transmission_automatic"
+                                                                            type="checkbox" value="automatic"
+                                                                            data-fit="checkbox"
+                                                                            data-filter="vehicle-inventory">
+                                                                        <span class="check-filter-mark"></span>
+                                                                        <span class="check-filter-text">AWD
+                                                                            (92129)</span>
+                                                                    </label>
+                                                                </div>
+
+                                                                <div class="check-filter">
+                                                                    <label class="control-label"
+                                                                        for="transmission_automatic">
+                                                                        <input id="transmission_automatic"
+                                                                            type="checkbox" value="automatic"
+                                                                            data-fit="checkbox"
+                                                                            data-filter="vehicle-inventory">
+                                                                        <span class="check-filter-mark"></span>
+                                                                        <span class="check-filter-text">4 WD
+                                                                            (28896)</span>
+                                                                    </label>
+                                                                </div>
+
+                                                                <div class="check-filter">
+                                                                    <label class="control-label"
+                                                                        for="transmission_automatic">
+                                                                        <input id="transmission_automatic"
+                                                                            type="checkbox" value="automatic"
+                                                                            data-fit="checkbox"
+                                                                            data-filter="vehicle-inventory">
+                                                                        <span class="check-filter-mark"></span>
+                                                                        <span class="check-filter-text">FWD(2782)</span>
+                                                                    </label>
+                                                                </div>
+
+                                                                <div class="check-filter">
+                                                                    <label class="control-label"
+                                                                        for="transmission_automatic">
+                                                                        <input id="transmission_automatic"
+                                                                            type="checkbox" value="automatic"
+                                                                            data-fit="checkbox"
+                                                                            data-filter="vehicle-inventory">
+                                                                        <span class="check-filter-mark"></span>
+                                                                        <span class="check-filter-text">Rwd
+                                                                            (28896)</span>
+                                                                    </label>
+                                                                </div>
+
+                                                                <div class="check-filter">
+                                                                    <label class="control-label"
+                                                                        for="transmission_automatic">
+                                                                        <input id="transmission_automatic"
+                                                                            type="checkbox" value="automatic"
+                                                                            data-fit="checkbox"
+                                                                            data-filter="vehicle-inventory">
+                                                                        <span class="check-filter-mark"></span>
+                                                                        <span class="check-filter-text">unknown
+                                                                            (2164)</span>
+                                                                    </label>
+                                                                </div>
+
+                                                                <div class="check-filter">
+                                                                    <label class="control-label"
+                                                                        for="transmission_automatic">
+                                                                        <input id="transmission_automatic"
+                                                                            type="checkbox" value="automatic"
+                                                                            data-fit="checkbox"
+                                                                            data-filter="vehicle-inventory">
+                                                                        <span class="check-filter-mark"></span>
+                                                                        <span class="check-filter-text">All Wheel Drive
+                                                                            (1659)</span>
+                                                                    </label>
+                                                                </div>
+
+                                                                <div class="check-filter">
+                                                                    <label class="control-label"
+                                                                        for="transmission_automatic">
+                                                                        <input id="transmission_automatic"
+                                                                            type="checkbox" value="automatic"
+                                                                            data-fit="checkbox"
+                                                                            data-filter="vehicle-inventory">
+                                                                        <span class="check-filter-mark"></span>
+                                                                        <span class="check-filter-text"> Front Wheel
+                                                                            Drive (674)</span>
+                                                                    </label>
+                                                                </div>
+
+                                                                <div class="check-filter">
+                                                                    <label class="control-label"
+                                                                        for="transmission_automatic">
+                                                                        <input id="transmission_automatic"
+                                                                            type="checkbox" value="automatic"
+                                                                            data-fit="checkbox"
+                                                                            data-filter="vehicle-inventory">
+                                                                        <span class="check-filter-mark"></span>
+                                                                        <span class="check-filter-text">Electric
+                                                                            (1631)</span>
+                                                                    </label>
+                                                                </div>
+
+
+                                                                <div class="check-filter">
+                                                                    <label class="control-label"
+                                                                        for="transmission_automatic">
+                                                                        <input id="transmission_automatic"
+                                                                            type="checkbox" value="automatic"
+                                                                            data-fit="checkbox"
+                                                                            data-filter="vehicle-inventory">
+                                                                        <span class="check-filter-mark"></span>
+                                                                        <span class="check-filter-text">Four Wheel
+                                                                            Drive(212)</span>
+                                                                    </label>
+                                                                </div>
+
+                                                                <div class="check-filter">
+                                                                    <label class="control-label"
+                                                                        for="transmission_automatic">
+                                                                        <input id="transmission_automatic"
+                                                                            type="checkbox" value="automatic"
+                                                                            data-fit="checkbox"
+                                                                            data-filter="vehicle-inventory">
+                                                                        <span class="check-filter-mark"></span>
+                                                                        <span class="check-filter-text">Rear Wheel Drive
+                                                                            (1)</span>
+                                                                    </label>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="more-filters-list">
+                                                            <p>Search By Fuel Type</p>
+                                                            <div class="transmission-filters">
+                                                                <div class="check-filter">
+                                                                    <label class="control-label"
+                                                                        for="transmission_automatic">
+                                                                        <input id="transmission_automatic"
+                                                                            type="checkbox" value="automatic"
+                                                                            data-fit="checkbox"
+                                                                            data-filter="vehicle-inventory">
+                                                                        <span class="check-filter-mark"></span>
+                                                                        <span class="check-filter-text">unknown
+                                                                            (92129)</span>
+                                                                    </label>
+                                                                </div>
+
+                                                                <div class="check-filter">
+                                                                    <label class="control-label"
+                                                                        for="transmission_automatic">
+                                                                        <input id="transmission_automatic"
+                                                                            type="checkbox" value="automatic"
+                                                                            data-fit="checkbox"
+                                                                            data-filter="vehicle-inventory">
+                                                                        <span class="check-filter-mark"></span>
+                                                                        <span class="check-filter-text">Gasoline
+                                                                            (28896)</span>
+                                                                    </label>
+                                                                </div>
+
+                                                                <div class="check-filter">
+                                                                    <label class="control-label"
+                                                                        for="transmission_automatic">
+                                                                        <input id="transmission_automatic"
+                                                                            type="checkbox" value="automatic"
+                                                                            data-fit="checkbox"
+                                                                            data-filter="vehicle-inventory">
+                                                                        <span class="check-filter-mark"></span>
+                                                                        <span class="check-filter-text">Gas
+                                                                            (2782)</span>
+                                                                    </label>
+                                                                </div>
+
+                                                                <div class="check-filter">
+                                                                    <label class="control-label"
+                                                                        for="transmission_automatic">
+                                                                        <input id="transmission_automatic"
+                                                                            type="checkbox" value="automatic"
+                                                                            data-fit="checkbox"
+                                                                            data-filter="vehicle-inventory">
+                                                                        <span class="check-filter-mark"></span>
+                                                                        <span class="check-filter-text">Gasoline
+                                                                            (28896)</span>
+                                                                    </label>
+                                                                </div>
+
+                                                                <div class="check-filter">
+                                                                    <label class="control-label"
+                                                                        for="transmission_automatic">
+                                                                        <input id="transmission_automatic"
+                                                                            type="checkbox" value="automatic"
+                                                                            data-fit="checkbox"
+                                                                            data-filter="vehicle-inventory">
+                                                                        <span class="check-filter-mark"></span>
+                                                                        <span class="check-filter-text">Hybrid
+                                                                            (2164)</span>
+                                                                    </label>
+                                                                </div>
+
+                                                                <div class="check-filter">
+                                                                    <label class="control-label"
+                                                                        for="transmission_automatic">
+                                                                        <input id="transmission_automatic"
+                                                                            type="checkbox" value="automatic"
+                                                                            data-fit="checkbox"
+                                                                            data-filter="vehicle-inventory">
+                                                                        <span class="check-filter-mark"></span>
+                                                                        <span class="check-filter-text">Diesel
+                                                                            (1659)</span>
+                                                                    </label>
+                                                                </div>
+
+                                                                <div class="check-filter">
+                                                                    <label class="control-label"
+                                                                        for="transmission_automatic">
+                                                                        <input id="transmission_automatic"
+                                                                            type="checkbox" value="automatic"
+                                                                            data-fit="checkbox"
+                                                                            data-filter="vehicle-inventory">
+                                                                        <span class="check-filter-mark"></span>
+                                                                        <span class="check-filter-text"> Flex fuel
+                                                                            (674)</span>
+                                                                    </label>
+                                                                </div>
+
+                                                                <div class="check-filter">
+                                                                    <label class="control-label"
+                                                                        for="transmission_automatic">
+                                                                        <input id="transmission_automatic"
+                                                                            type="checkbox" value="automatic"
+                                                                            data-fit="checkbox"
+                                                                            data-filter="vehicle-inventory">
+                                                                        <span class="check-filter-mark"></span>
+                                                                        <span class="check-filter-text">Electric
+                                                                            (1631)</span>
+                                                                    </label>
+                                                                </div>
+
+
+                                                                <div class="check-filter">
+                                                                    <label class="control-label"
+                                                                        for="transmission_automatic">
+                                                                        <input id="transmission_automatic"
+                                                                            type="checkbox" value="automatic"
+                                                                            data-fit="checkbox"
+                                                                            data-filter="vehicle-inventory">
+                                                                        <span class="check-filter-mark"></span>
+                                                                        <span class="check-filter-text">Biodiesel
+                                                                            (212)</span>
+                                                                    </label>
+                                                                </div>
+
+                                                                <div class="check-filter">
+                                                                    <label class="control-label"
+                                                                        for="transmission_automatic">
+                                                                        <input id="transmission_automatic"
+                                                                            type="checkbox" value="automatic"
+                                                                            data-fit="checkbox"
+                                                                            data-filter="vehicle-inventory">
+                                                                        <span class="check-filter-mark"></span>
+                                                                        <span class="check-filter-text">CNG (1)</span>
+                                                                    </label>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+
+
+
+                                                        <div class="more-filters-list">
+                                                            <p>Search By Exterior Color</p>
+                                                            <div class="extColor-filters">
+                                                                <div class="check-filter">
+                                                                    <label class="control-label" for="extColor FFFFFF">
+                                                                        <input id="extColor_FFFFFF" type="checkbox"
+                                                                            value="automatic" data-fit="checkbox"
+                                                                            data-filter="vehicle-inventory">
+                                                                        <span class="check-filter-mark"></span>
+                                                                        <span class="filter-color"
+                                                                            style="background-color: #FFFFFF;"></span>
+                                                                        <span class="check-filter-text">White</span>
+                                                                    </label>
+                                                                </div>
+
+                                                                <div class="check-filter">
+                                                                    <label class="control-label" for="extColor 000000">
+                                                                        <input id="extColor_000000" type="checkbox"
+                                                                            value="automatic" data-fit="checkbox"
+                                                                            data-filter="vehicle-inventory">
+                                                                        <span class="check-filter-mark"></span>
+                                                                        <span class="filter-color"
+                                                                            style="background-color: #000000;"></span>
+                                                                        <span class="check-filter-text">Black</span>
+                                                                    </label>
+                                                                </div>
+
+                                                                <div class="check-filter">
+                                                                    <label class="control-label" for="extColor 808080">
+                                                                        <input id="extColor_808080" type="checkbox"
+                                                                            value="automatic" data-fit="checkbox"
+                                                                            data-filter="vehicle-inventory">
+                                                                        <span class="check-filter-mark"></span>
+                                                                        <span class="filter-color"
+                                                                            style="background-color: #808080;"></span>
+                                                                        <span class="check-filter-text">Gray</span>
+                                                                    </label>
+                                                                </div>
+
+                                                                <div class="check-filter">
+                                                                    <label class="control-label" for="extColor unknown">
+                                                                        <input id="extColor_unknown" type="checkbox"
+                                                                            value="automatic" data-fit="checkbox"
+                                                                            data-filter="vehicle-inventory">
+                                                                        <span class="check-filter-mark"></span>
+                                                                        <span class="filter-color"
+                                                                            style="background-color: unknown;"></span>
+                                                                        <span class="check-filter-text">unknown</span>
+                                                                    </label>
+                                                                </div>
+
+                                                                <div class="check-filter">
+                                                                    <label class="control-label" for="extColor C0C0C0">
+                                                                        <input id="extColor_C0C0C0" type="checkbox"
+                                                                            value="automatic" data-fit="checkbox"
+                                                                            data-filter="vehicle-inventory">
+                                                                        <span class="check-filter-mark"></span>
+                                                                        <span class="filter-color"
+                                                                            style="background-color: #C0C0C0;"></span>
+                                                                        <span class="check-filter-text">Silver</span>
+                                                                    </label>
+                                                                </div>
+
+                                                                <div class="check-filter">
+                                                                    <label class="control-label" for="extColor 0000ff">
+                                                                        <input id="extColor_0000ff" type="checkbox"
+                                                                            value="automatic" data-fit="checkbox"
+                                                                            data-filter="vehicle-inventory">
+                                                                        <span class="check-filter-mark"></span>
+                                                                        <span class="filter-color"
+                                                                            style="background-color: #0000ff;"></span>
+                                                                        <span class="check-filter-text">Blue</span>
+                                                                    </label>
+                                                                </div>
+
+                                                                <div class="check-filter">
+                                                                    <label class="control-label" for="extColor FF0000">
+                                                                        <input id="extColor_FF0000" type="checkbox"
+                                                                            value="automatic" data-fit="checkbox"
+                                                                            data-filter="vehicle-inventory">
+                                                                        <span class="check-filter-mark"></span>
+                                                                        <span class="filter-color"
+                                                                            style="background-color: #FF0000;"></span>
+                                                                        <span class="check-filter-text">Red</span>
+                                                                    </label>
+                                                                </div>
+
+                                                                <div class="check-filter">
+                                                                    <label class="control-label" for="extColor 008000">
+                                                                        <input id="extColor_008000" type="checkbox"
+                                                                            value="automatic" data-fit="checkbox"
+                                                                            data-filter="vehicle-inventory">
+                                                                        <span class="check-filter-mark"></span>
+                                                                        <span class="filter-color"
+                                                                            style="background-color: #008000;"></span>
+                                                                        <span class="check-filter-text">Green</span>
+                                                                    </label>
+                                                                </div>
+
+                                                                <div class="check-filter">
+                                                                    <label class="control-label" for="extColor ffd700">
+                                                                        <input id="extColor_ffd700" type="checkbox"
+                                                                            value="automatic" data-fit="checkbox"
+                                                                            data-filter="vehicle-inventory">
+                                                                        <span class="check-filter-mark"></span>
+                                                                        <span class="filter-color"
+                                                                            style="background-color: #ffd700;"></span>
+                                                                        <span class="check-filter-text">Gold</span>
+                                                                    </label>
+                                                                </div>
+
+                                                                <div class="check-filter">
+                                                                    <label class="control-label" for="extColor ffff00">
+                                                                        <input id="extColor_ffff00" type="checkbox"
+                                                                            value="automatic" data-fit="checkbox"
+                                                                            data-filter="vehicle-inventory">
+                                                                        <span class="check-filter-mark"></span>
+                                                                        <span class="filter-color"
+                                                                            style="background-color: #ffff00;"></span>
+                                                                        <span class="check-filter-text">yellow</span>
+                                                                    </label>
+                                                                </div>
+
+                                                                <div class="check-filter">
+                                                                    <label class="control-label" for="extColor f5f5DC">
+                                                                        <input id="extColor_f5f5DC" type="checkbox"
+                                                                            value="automatic" data-fit="checkbox"
+                                                                            data-filter="vehicle-inventory">
+                                                                        <span class="check-filter-mark"></span>
+                                                                        <span class="filter-color"
+                                                                            style="background-color: #f5F5DC;"></span>
+                                                                        <span class="check-filter-text">Beige</span>
+                                                                    </label>
+                                                                </div>
+
+                                                                <div class="check-filter">
+                                                                    <label class="control-label" for="extColorA52a2a">
+                                                                        <input id="extColor_A52a2a" type="checkbox"
+                                                                            value="automatic" data-fit="checkbox"
+                                                                            data-filter="vehicle-inventory">
+                                                                        <span class="check-filter-mark"></span>
+                                                                        <span class="filter-color"
+                                                                            style="background-color: #A52a2a;"></span>
+                                                                        <span class="check-filter-text">Brown</span>
+                                                                    </label>
+                                                                </div>
+
+                                                                <div class="check-filter">
+                                                                    <label class="control-label" for="800080">
+                                                                        <input id="extColor_800080" type="checkbox"
+                                                                            value="automatic" data-fit="checkbox"
+                                                                            data-filter="vehicle-inventory">
+                                                                        <span class="check-filter-mark"></span>
+                                                                        <span class="filter-color"
+                                                                            style="background-color: #800080;"></span>
+                                                                        <span class="check-filter-text">Purple</span>
+                                                                    </label>
+                                                                </div>
+
+                                                                <div class="check-filter">
+                                                                    <label class="control-label" for="extColorD2B48C">
+                                                                        <input id="extColor_A52a2a" type="checkbox"
+                                                                            value="automatic" data-fit="checkbox"
+                                                                            data-filter="vehicle-inventory">
+                                                                        <span class="check-filter-mark"></span>
+                                                                        <span class="filter-color"
+                                                                            style="background-color: #D2B48C;"></span>
+                                                                        <span class="check-filter-text">Tan</span>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+
+
+
+                                                        <div class="more-filters-list">
+                                                            <p>Search By Ixterior Color</p>
+                                                            <div class="extColor-filters">
+                                                                <div class="check-filter">
+                                                                    <label class="control-label" for="extColor FFFFFF">
+                                                                        <input id="extColor_FFFFFF" type="checkbox"
+                                                                            value="automatic" data-fit="checkbox"
+                                                                            data-filter="vehicle-inventory">
+                                                                        <span class="check-filter-mark"></span>
+                                                                        <span class="filter-color"
+                                                                            style="background-color: #FFFFFF;"></span>
+                                                                        <span class="check-filter-text">White</span>
+                                                                    </label>
+                                                                </div>
+
+                                                                <div class="check-filter">
+                                                                    <label class="control-label" for="extColor 000000">
+                                                                        <input id="extColor_000000" type="checkbox"
+                                                                            value="automatic" data-fit="checkbox"
+                                                                            data-filter="vehicle-inventory">
+                                                                        <span class="check-filter-mark"></span>
+                                                                        <span class="filter-color"
+                                                                            style="background-color: #000000;"></span>
+                                                                        <span class="check-filter-text">Black</span>
+                                                                    </label>
+                                                                </div>
+
+                                                                <div class="check-filter">
+                                                                    <label class="control-label" for="extColor 808080">
+                                                                        <input id="extColor_808080" type="checkbox"
+                                                                            value="automatic" data-fit="checkbox"
+                                                                            data-filter="vehicle-inventory">
+                                                                        <span class="check-filter-mark"></span>
+                                                                        <span class="filter-color"
+                                                                            style="background-color: #808080;"></span>
+                                                                        <span class="check-filter-text">Gray</span>
+                                                                    </label>
+                                                                </div>
+
+                                                                <div class="check-filter">
+                                                                    <label class="control-label" for="extColor unknown">
+                                                                        <input id="extColor_unknown" type="checkbox"
+                                                                            value="automatic" data-fit="checkbox"
+                                                                            data-filter="vehicle-inventory">
+                                                                        <span class="check-filter-mark"></span>
+                                                                        <span class="filter-color"
+                                                                            style="background-color: unknown;"></span>
+                                                                        <span class="check-filter-text">unknown</span>
+                                                                    </label>
+                                                                </div>
+
+                                                                <div class="check-filter">
+                                                                    <label class="control-label" for="extColor C0C0C0">
+                                                                        <input id="extColor_C0C0C0" type="checkbox"
+                                                                            value="automatic" data-fit="checkbox"
+                                                                            data-filter="vehicle-inventory">
+                                                                        <span class="check-filter-mark"></span>
+                                                                        <span class="filter-color"
+                                                                            style="background-color: #C0C0C0;"></span>
+                                                                        <span class="check-filter-text">Silver</span>
+                                                                    </label>
+                                                                </div>
+
+                                                                <div class="check-filter">
+                                                                    <label class="control-label" for="extColor 0000ff">
+                                                                        <input id="extColor_0000ff" type="checkbox"
+                                                                            value="automatic" data-fit="checkbox"
+                                                                            data-filter="vehicle-inventory">
+                                                                        <span class="check-filter-mark"></span>
+                                                                        <span class="filter-color"
+                                                                            style="background-color: #0000ff;"></span>
+                                                                        <span class="check-filter-text">Blue</span>
+                                                                    </label>
+                                                                </div>
+
+                                                                <div class="check-filter">
+                                                                    <label class="control-label" for="extColor FF0000">
+                                                                        <input id="extColor_FF0000" type="checkbox"
+                                                                            value="automatic" data-fit="checkbox"
+                                                                            data-filter="vehicle-inventory">
+                                                                        <span class="check-filter-mark"></span>
+                                                                        <span class="filter-color"
+                                                                            style="background-color: #FF0000;"></span>
+                                                                        <span class="check-filter-text">Red</span>
+                                                                    </label>
+                                                                </div>
+
+                                                                <div class="check-filter">
+                                                                    <label class="control-label" for="extColor 008000">
+                                                                        <input id="extColor_008000" type="checkbox"
+                                                                            value="automatic" data-fit="checkbox"
+                                                                            data-filter="vehicle-inventory">
+                                                                        <span class="check-filter-mark"></span>
+                                                                        <span class="filter-color"
+                                                                            style="background-color: #008000;"></span>
+                                                                        <span class="check-filter-text">Green</span>
+                                                                    </label>
+                                                                </div>
+
+                                                                <div class="check-filter">
+                                                                    <label class="control-label" for="extColor ffd700">
+                                                                        <input id="extColor_ffd700" type="checkbox"
+                                                                            value="automatic" data-fit="checkbox"
+                                                                            data-filter="vehicle-inventory">
+                                                                        <span class="check-filter-mark"></span>
+                                                                        <span class="filter-color"
+                                                                            style="background-color: #ffd700;"></span>
+                                                                        <span class="check-filter-text">Gold</span>
+                                                                    </label>
+                                                                </div>
+
+                                                                <div class="check-filter">
+                                                                    <label class="control-label" for="extColor ffff00">
+                                                                        <input id="extColor_ffff00" type="checkbox"
+                                                                            value="automatic" data-fit="checkbox"
+                                                                            data-filter="vehicle-inventory">
+                                                                        <span class="check-filter-mark"></span>
+                                                                        <span class="filter-color"
+                                                                            style="background-color: #ffff00;"></span>
+                                                                        <span class="check-filter-text">yellow</span>
+                                                                    </label>
+                                                                </div>
+
+                                                                <div class="check-filter">
+                                                                    <label class="control-label" for="extColor f5f5DC">
+                                                                        <input id="extColor_f5f5DC" type="checkbox"
+                                                                            value="automatic" data-fit="checkbox"
+                                                                            data-filter="vehicle-inventory">
+                                                                        <span class="check-filter-mark"></span>
+                                                                        <span class="filter-color"
+                                                                            style="background-color: #f5F5DC;"></span>
+                                                                        <span class="check-filter-text">Beige</span>
+                                                                    </label>
+                                                                </div>
+
+                                                                <div class="check-filter">
+                                                                    <label class="control-label" for="extColorA52a2a">
+                                                                        <input id="extColor_A52a2a" type="checkbox"
+                                                                            value="automatic" data-fit="checkbox"
+                                                                            data-filter="vehicle-inventory">
+                                                                        <span class="check-filter-mark"></span>
+                                                                        <span class="filter-color"
+                                                                            style="background-color: #A52a2a;"></span>
+                                                                        <span class="check-filter-text">Brown</span>
+                                                                    </label>
+                                                                </div>
+
+                                                                <div class="check-filter">
+                                                                    <label class="control-label" for="800080">
+                                                                        <input id="extColor_800080" type="checkbox"
+                                                                            value="automatic" data-fit="checkbox"
+                                                                            data-filter="vehicle-inventory">
+                                                                        <span class="check-filter-mark"></span>
+                                                                        <span class="filter-color"
+                                                                            style="background-color: #800080;"></span>
+                                                                        <span class="check-filter-text">Purple</span>
+                                                                    </label>
+                                                                </div>
+
+                                                                <div class="check-filter">
+                                                                    <label class="control-label" for="extColorD2B48C">
+                                                                        <input id="extColor_A52a2a" type="checkbox"
+                                                                            value="automatic" data-fit="checkbox"
+                                                                            data-filter="vehicle-inventory">
+                                                                        <span class="check-filter-mark"></span>
+                                                                        <span class="filter-color"
+                                                                            style="background-color: #D2B48C;"></span>
+                                                                        <span class="check-filter-text">Tan</span>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+
+
+
+                                                        <div class="more-filters-list">
+                                                            <p>Search by Body Type</p>
+                                                            <div class="bodytype-filters">
+                                                                <div class="check-filter checkBodyStyle">
+                                                                    <label class="control-label" for="body_type_suv">
+                                                                        <!-- <input id="body_type_suv" type="checkbox" name="body_type" value="suv" data-fit="checkbox" data-filter="vehicle-inventory"> -->
+                                                                        <span class="check-filter-mark"></span>
+                                                                        <span
+                                                                            class="d-flex flex-column justify-content-center align-items-center text-center check-filter-text">
+                                                                            <img src="./Image/suv.svg" alt="suv"
+                                                                                width="100%" height="20%">SUV
+                                                                            <span class="text-secondary">(52414)</span>
+
+                                                                        </span>
+                                                                    </label>
+                                                                </div>
+
+                                                                <div class="check-filter checkBodyStyle">
+                                                                    <label class="control-label" for="body_type_suv">
+                                                                        <!-- <input id="body_type_suv" type="checkbox" name="body_type" value="suv" data-fit="checkbox" data-filter="vehicle-inventory"> -->
+                                                                        <span class="check-filter-mark"></span>
+                                                                        <span
+                                                                            class="d-flex flex-column justify-content-center align-items-center text-center check-filter-text">
+                                                                            <img src="./Image/suv.svg" alt="suv"
+                                                                                width="100%" height="20%">SUV
+                                                                            <span class="text-secondary">(52414)</span>
+
+                                                                        </span>
+                                                                    </label>
+                                                                </div>
+
+                                                                <div class="check-filter checkBodyStyle">
+                                                                    <label class="control-label" for="body_type_suv">
+                                                                        <!-- <input id="body_type_suv" type="checkbox" name="body_type" value="suv" data-fit="checkbox" data-filter="vehicle-inventory"> -->
+                                                                        <span class="check-filter-mark"></span>
+                                                                        <span
+                                                                            class="d-flex flex-column justify-content-center align-items-center text-center check-filter-text">
+                                                                            <img src="./Image/suv.svg" alt="suv"
+                                                                                width="100%" height="20%">SUV
+                                                                            <span class="text-secondary">(52414)</span>
+
+                                                                        </span>
+                                                                    </label>
+                                                                </div>
+
+                                                                <div class="check-filter checkBodyStyle">
+                                                                    <label class="control-label" for="body_type_suv">
+                                                                        <!-- <input id="body_type_suv" type="checkbox" name="body_type" value="suv" data-fit="checkbox" data-filter="vehicle-inventory"> -->
+                                                                        <span class="check-filter-mark"></span>
+                                                                        <span
+                                                                            class="d-flex flex-column justify-content-center align-items-center text-center check-filter-text">
+                                                                            <img src="./Image/suv.svg" alt="suv"
+                                                                                width="100%" height="20%">SUV
+                                                                            <span class="text-secondary">(52414)</span>
+
+                                                                        </span>
+                                                                    </label>
+                                                                </div>
+
+
+                                                                <div class="check-filter checkBodyStyle">
+                                                                    <label class="control-label" for="body_type_suv">
+                                                                        <!-- <input id="body_type_suv" type="checkbox" name="body_type" value="suv" data-fit="checkbox" data-filter="vehicle-inventory"> -->
+                                                                        <span class="check-filter-mark"></span>
+                                                                        <span
+                                                                            class="d-flex flex-column justify-content-center align-items-center text-center check-filter-text">
+                                                                            <img src="./Image/suv.svg" alt="suv"
+                                                                                width="100%" height="20%">SUV
+                                                                            <span class="text-secondary">(52414)</span>
+
+                                                                        </span>
+                                                                    </label>
+                                                                </div>
+
+
+                                                                <div class="check-filter checkBodyStyle">
+                                                                    <label class="control-label" for="body_type_suv">
+                                                                        <!-- <input id="body_type_suv" type="checkbox" name="body_type" value="suv" data-fit="checkbox" data-filter="vehicle-inventory"> -->
+                                                                        <span class="check-filter-mark"></span>
+                                                                        <span
+                                                                            class="d-flex flex-column justify-content-center align-items-center text-center check-filter-text">
+                                                                            <img src="./Image/suv.svg" alt="suv"
+                                                                                width="100%" height="20%">SUV
+                                                                            <span class="text-secondary">(52414)</span>
+
+                                                                        </span>
+                                                                    </label>
+                                                                </div>
+
+
+                                                                <div class="check-filter checkBodyStyle">
+                                                                    <label class="control-label" for="body_type_suv">
+                                                                        <!-- <input id="body_type_suv" type="checkbox" name="body_type" value="suv" data-fit="checkbox" data-filter="vehicle-inventory"> -->
+                                                                        <span class="check-filter-mark"></span>
+                                                                        <span
+                                                                            class="d-flex flex-column justify-content-center align-items-center text-center check-filter-text">
+                                                                            <img src="./Image/suv.svg" alt="suv"
+                                                                                width="100%" height="20%">SUV
+                                                                            <span class="text-secondary">(52414)</span>
+
+                                                                        </span>
+                                                                    </label>
+                                                                </div>
+
+
+                                                                <div class="check-filter checkBodyStyle">
+                                                                    <label class="control-label" for="body_type_suv">
+                                                                        <!-- <input id="body_type_suv" type="checkbox" name="body_type" value="suv" data-fit="checkbox" data-filter="vehicle-inventory"> -->
+                                                                        <span class="check-filter-mark"></span>
+                                                                        <span
+                                                                            class="d-flex flex-column justify-content-center align-items-center text-center check-filter-text">
+                                                                            <img src="./Image/suv.svg" alt="suv"
+                                                                                width="100%" height="20%">SUV
+                                                                            <span class="text-secondary">(52414)</span>
+
+                                                                        </span>
+                                                                    </label>
+                                                                </div>
+
+
+                                                                <div class="check-filter checkBodyStyle">
+                                                                    <label class="control-label" for="body_type_suv">
+                                                                        <span class="check-filter-mark"></span>
+                                                                        <span
+                                                                            class="d-flex flex-column justify-content-center align-items-center text-center check-filter-text">
+                                                                            <img src="./Image/suv.svg" alt="suv"
+                                                                                width="100%" height="20%">SUV
+                                                                            <span class="text-secondary">(52414)</span>
+
+                                                                        </span>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+
+
+                                                        <div class="more-filters-list">
+                                                            <p>Search By Mileage</p>
+
+                                                            <div class="filter-input" data-input="mileage_slider">
+                                                                <!-- <div
+                                                                    class="slider ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content">
+                                                                    <div
+                                                                        class="ui-slider-range ui-corner-all ui-widget-header">
+                                                                    </div>
+                                                                    <span
+                                                                        class="ui-slider-handle ui-corner-all ui-state-default"></span>
+                                                                    <span
+                                                                        class="ui-slider-handle ui-corner-all ui-state-default"
+                                                                        style="left:100%;"></span>
+
+                                                                </div> -->
+                                                                <label class="form-label" for="customRange1"></label>
+<div class="range">
+  <input type="range" class="form-range" id="customRange1" />
+</div>
+                                                                <div class="d-flex justify-content-between">
+                                                                    <div class="minMilesBox vehicleRangeSlider">
+                                                                        <input type="text" value="1" name=""
+                                                                            id="minMiles">
+                                                                    </div>
+                                                                    <div class="maxMilesBox vehicleRangeSlider">
+                                                                        <input type="text" value="100000" name=""
+                                                                            id="maxMiles">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="dropdown-box">
+                                                                <div class="dropdown-box-inner">
+                                                                    <p class="dropdown-box-title">Min Mileage</p>
+                                                                    <p id="min_mileage_text"
+                                                                        class="dropdown-box-text pl-2">0</p>
+                                                                </div>
+
+                                                                <div class="dropdown-box-inner">
+                                                                    <p class="dropdown-box-title text-right">Max Mileage
+                                                                    </p>
+                                                                    <p id="max_mileage_text"
+                                                                        class="dropdown-box-text pl-2">100000</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+
+
+                                                        <div class="more-filters-list">
+                                                            <div class="vehicle-image-filter">
+                                                                <p>Show Vehicle With Image Only</p>
+                                                                <div class="image-switcher">
+                                                                    <label class="switch" for="">
+                                                                        
+                                                                        <span class="slider round"></span>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+
+
+
+
+
+
+
+
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+<div class="search-filter-mobileViewBtn d-md-none d-lg-none d-xl-none">
+    <div class="row">
+        
+    </div>
+</div>
+
+            </div>
+
+            <div class="row">
+
+
+                <div class="col-6 col-sm-6 pr-0 d-md-none d-lg-none d-xl-none">
+                    <!-- <button class="openventoryFilter" data-filter="openFilter">
+                        <img src="./Image/filter.png" alt="filter">
+                         Filters
+                    </button> -->
+
+                    <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary openventoryFilter" data-toggle="modal" data-target="#exampleModalCenter">
+    <img src="./Image/filter.png" alt="filter">
+    Filters
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        
+       
+
+      </div>
+    </div>
+  </div>
+                </div>
+
+
+                
+
+
+                <div class="col-6 col-sm-6 col-md-12 col-lg-12">
+                    <div class="vehicle-inventory-sorting d-md-none d-lg-none d-xl-none">
+                        <select name="" id="" class="form-control">
+                            <option value="">--sort By--</option>
+                            <option value="">Price : High To Low</option>
+                            <option value="">Price : Low To high</option>
+                            <option value="Price_desc">Year : New to old</option>
+                            <option value="Price_desc">Distance : Nearest to Fatherest</option>
+                            <option value="Price_desc">Listed : nwely listed to Old Listed</option>
+                            <option value="Price_desc">Mileage : High to Low</option>
+                            <option value="Price_desc">Mileage : Low to High</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- section 2 -->
+
+
+
+    <section class="Vechile-grid-section">
+        <div class="container-mid">
+            <div class="row">
+                <div class="col-12 col-md-3 col-sm-12  ">
+                    <div class="vehicle-inventory-sorting mobile-view-sort vehicle-inventorys">
+                        <select class="form-control" name="order" id="" data-fit="select"
+                            data-filter="vehicle-inventory">
+                            <option value="">--Sort By --</option>
+                            <option value="Price_desc">price : High to Low</option>
+                            <option value="Price_desc">price : Low to High</option>
+                            <option value="Price_desc">Year : New to old</option>
+                            <option value="Price_desc">Distance : Nearest to Fatherest</option>
+                            <option value="Price_desc">Listed : nwely listed to Old Listed</option>
+                            <option value="Price_desc">Mileage : High to Low</option>
+                            <option value="Price_desc">Mileage : Low to High</option>
+
+                        </select>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-sm-12">
+
+                </div>
+                <div class="col-12 col-md-3 col-sm-12">
+                    <div class="vehicle-inventory-sorting mobile-view-sort vehicle-inventorys">
+                        <select class="form-control" name="order" id="" data-fit="select"
+                            data-filter="vehicle-inventory">
+                            <option value="">--Sort By --</option>
+                            <option value="Price_desc">price : High to Low</option>
+                            <option value="Price_desc">price : Low to High</option>
+                            <option value="Price_desc">Year : New to old</option>
+                            <option value="Price_desc">Distance : Nearest to Fatherest</option>
+                            <option value="Price_desc">Listed : nwely listed to Old Listed</option>
+                            <option value="Price_desc">Mileage : High to Low</option>
+                            <option value="Price_desc">Mileage : Low to High</option>
+
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 padding-8">
+                    <div class="vehicleInventory">
+                        <a href="">
+                            <div class="banner-carousel-indicators">
+                                <div class="vehicle-banner-img">
+                                    <img class="img-fluid" src="./Image/vechile.jpeg" alt="">
+                                </div>
+                            </div>
+                            <div class="vehicleInventoryBox-detail">
+                                <div class="vehicleInventory-wishlist " data-wishlist="true" title="Add to wishlist">
+                                    <span class="Favourite-icon">
+                                        <img class="img-fluid" src="./Image/star-blank.svg" alt="">
+                                    </span>
+                                </div>
+                                <div class="Vehicle-title">
+                                    <p class="vehicle-condition">new</p>
+                                    <h2 class="vehicleName">2022 Ford Edge</h2>
+                                    <p class="VehicleTrim">SEL</p>
+                                </div>
+                                <div class="priceDetail">
+                                    <div class="price">
+                                        <p class="current-price">$44,515</p>
+                                    </div>
+                                    <div class="emi">
+                                        <p>
+                                            <span data-toggle="tooltip" title="Estimated Payment For 60 Months">
+                                                <img class="img-fluid" src="./Image/info.svg" alt="">
+                                            </span>EMI $742/Month
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                                <div class="vehicleInventoryDescription">
+                                    <ul>
+                                        <li>
+                                            6 miles
+                                        </li>
+                                        <li>
+                                            : gas
+                                        </li>
+                                        <li>
+                                            : automatic
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="vehicle-location">
+                                    <p>
+                                        <img class="img-fluid" src="./Image/dealer 2.svg" alt="">
+                                        SALT LAKE CITY, UT 84115
+                                    </p>
+                                </div>
+                                <span class="vehicleInventoryBox-btn d-block d-md-none">View Detail</span>
+
+
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 padding-8">
+                    <div class="vehicleInventory">
+                        <a href="">
+                            <div class="banner-carousel-indicators">
+                                <div class="vehicle-banner-img">
+                                    <img class="img-fluid" src="./Image/image 2.jpeg" alt="">
+                                </div>
+                            </div>
+                            <div class="vehicleInventoryBox-detail">
+                                <div class="vehicleInventory-wishlist " data-wishlist="true" title="Add to wishlist">
+                                    <span class="Favourite-icon">
+                                        <img class="img-fluid" src="./Image/star-blank.svg" alt="">
+                                    </span>
+                                </div>
+                                <div class="Vehicle-title">
+                                    <p class="vehicle-condition">new</p>
+                                    <h2 class="vehicleName">2022 Ford Edge</h2>
+                                    <p class="VehicleTrim">SEL</p>
+                                </div>
+                                <div class="priceDetail">
+                                    <div class="price">
+                                        <p class="current-price">$44,515</p>
+                                    </div>
+                                    <div class="emi">
+                                        <p>
+                                            <span data-toggle="tooltip" title="Estimated Payment For 60 Months">
+                                                <img class="img-fluid" src="./Image/info.svg" alt="">
+                                            </span>EMI $742/Month
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                                <div class="vehicleInventoryDescription">
+                                    <ul>
+                                        <li>
+                                            6 miles
+                                        </li>
+                                        <li>
+                                            : gas
+                                        </li>
+                                        <li>
+                                            : automatic
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="vehicle-location">
+                                    <p>
+                                        <img class="img-fluid" src="./Image/dealer 2.svg" alt="">
+                                        SALT LAKE CITY, UT 84115
+                                    </p>
+                                </div>
+
+                                <span class="vehicleInventoryBox-btn d-block d-md-none">View Detail</span>
+
+
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+
+
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 padding-8">
+                    <div class="vehicleInventory">
+                        <a href="">
+                            <div class="banner-carousel-indicators">
+                                <div class="vehicle-banner-img">
+                                    <img class="img-fluid" src="./Image/image 3.jpeg" alt="">
+                                </div>
+                            </div>
+                            <div class="vehicleInventoryBox-detail">
+                                <div class="vehicleInventory-wishlist " data-wishlist="true" title="Add to wishlist">
+                                    <span class="Favourite-icon">
+                                        <img class="img-fluid" src="./Image/star-blank.svg" alt="">
+                                    </span>
+                                </div>
+                                <div class="Vehicle-title">
+                                    <p class="vehicle-condition">new</p>
+                                    <h2 class="vehicleName">2022 Ford Edge</h2>
+                                    <p class="VehicleTrim">SEL</p>
+                                </div>
+                                <div class="priceDetail">
+                                    <div class="price">
+                                        <p class="current-price">$44,515</p>
+                                    </div>
+                                    <div class="emi">
+                                        <p>
+                                            <span data-toggle="tooltip" title="Estimated Payment For 60 Months">
+                                                <img class="img-fluid" src="./Image/info.svg" alt="">
+                                            </span>EMI $742/Month
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                                <div class="vehicleInventoryDescription">
+                                    <ul>
+                                        <li>
+                                            6 miles
+                                        </li>
+                                        <li>
+                                            : gas
+                                        </li>
+                                        <li>
+                                            : automatic
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="vehicle-location">
+                                    <p>
+                                        <img class="img-fluid" src="./Image/dealer 2.svg" alt="">
+                                        SALT LAKE CITY, UT 84115
+                                    </p>
+                                </div>
+                                <span class="vehicleInventoryBox-btn d-block d-md-none">View Detail</span>
+
+
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+
+
+
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 padding-8">
+                    <div class="vehicleInventory">
+                        <a href="">
+                            <div class="banner-carousel-indicators">
+                                <div class="vehicle-banner-img">
+                                    <img class="img-fluid" src="./Image/image 4.png" alt="">
+                                </div>
+                            </div>
+                            <div class="vehicleInventoryBox-detail">
+                                <div class="vehicleInventory-wishlist " data-wishlist="true" title="Add to wishlist">
+                                    <span class="Favourite-icon">
+                                        <img class="img-fluid" src="./Image/star-blank.svg" alt="">
+                                    </span>
+                                </div>
+                                <div class="Vehicle-title">
+                                    <p class="vehicle-condition">new</p>
+                                    <h2 class="vehicleName">2022 Ford Edge</h2>
+                                    <p class="VehicleTrim">SEL</p>
+                                </div>
+                                <div class="priceDetail">
+                                    <div class="price">
+                                        <p class="current-price">$44,515</p>
+                                    </div>
+                                    <div class="emi">
+                                        <p>
+                                            <span data-toggle="tooltip" title="Estimated Payment For 60 Months">
+                                                <img class="img-fluid" src="./Image/info.svg" alt="">
+                                            </span>EMI $742/Month
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                                <div class="vehicleInventoryDescription">
+                                    <ul>
+                                        <li>
+                                            6 miles
+                                        </li>
+                                        <li>
+                                            : gas
+                                        </li>
+                                        <li>
+                                            : automatic
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="vehicle-location">
+                                    <p>
+                                        <img class="img-fluid" src="./Image/dealer 2.svg" alt="">
+                                        SALT LAKE CITY, UT 84115
+                                    </p>
+                                </div>
+                                <span class="vehicleInventoryBox-btn d-block d-md-none">View Detail</span>
+
+
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+
+
+
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 padding-8">
+                    <div class="vehicleInventory">
+                        <a href="">
+                            <div class="banner-carousel-indicators">
+                                <div class="vehicle-banner-img">
+                                    <img class="img-fluid" src="./Image/image 5.png" alt="">
+                                </div>
+                            </div>
+                            <div class="vehicleInventoryBox-detail">
+                                <div class="vehicleInventory-wishlist " data-wishlist="true" title="Add to wishlist">
+                                    <span class="Favourite-icon">
+                                        <img class="img-fluid" src="./Image/star-blank.svg" alt="">
+                                    </span>
+                                </div>
+                                <div class="Vehicle-title">
+                                    <p class="vehicle-condition">new</p>
+                                    <h2 class="vehicleName">2022 Ford Edge</h2>
+                                    <p class="VehicleTrim">SEL</p>
+                                </div>
+                                <div class="priceDetail">
+                                    <div class="price">
+                                        <p class="current-price">$44,515</p>
+                                    </div>
+                                    <div class="emi">
+                                        <p>
+                                            <span data-toggle="tooltip" title="Estimated Payment For 60 Months">
+                                                <img class="img-fluid" src="./Image/info.svg" alt="">
+                                            </span>EMI $742/Month
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                                <div class="vehicleInventoryDescription">
+                                    <ul>
+                                        <li>
+                                            6 miles
+                                        </li>
+                                        <li>
+                                            : gas
+                                        </li>
+                                        <li>
+                                            : automatic
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="vehicle-location">
+                                    <p>
+                                        <img class="img-fluid" src="./Image/dealer 2.svg" alt="">
+                                        SALT LAKE CITY, UT 84115
+                                    </p>
+                                </div>
+                                <span class="vehicleInventoryBox-btn d-block d-md-none">View Detail</span>
+
+
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+
+
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 padding-8">
+                    <div class="vehicleInventory">
+                        <a href="">
+                            <div class="banner-carousel-indicators">
+                                <div class="vehicle-banner-img">
+                                    <img class="img-fluid" src="./Image/image 6.jpeg" alt="">
+                                </div>
+                            </div>
+                            <div class="vehicleInventoryBox-detail">
+                                <div class="vehicleInventory-wishlist " data-wishlist="true" title="Add to wishlist">
+                                    <span class="Favourite-icon">
+                                        <img class="img-fluid" src="./Image/star-blank.svg" alt="">
+                                    </span>
+                                </div>
+                                <div class="Vehicle-title">
+                                    <p class="vehicle-condition">new</p>
+                                    <h2 class="vehicleName">2022 Ford Edge</h2>
+                                    <p class="VehicleTrim">SEL</p>
+                                </div>
+                                <div class="priceDetail">
+                                    <div class="price">
+                                        <p class="current-price">$44,515</p>
+                                    </div>
+                                    <div class="emi">
+                                        <p>
+                                            <span data-toggle="tooltip" title="Estimated Payment For 60 Months">
+                                                <img class="img-fluid" src="./Image/info.svg" alt="">
+                                            </span>EMI $742/Month
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                                <div class="vehicleInventoryDescription">
+                                    <ul>
+                                        <li>
+                                            6 miles
+                                        </li>
+                                        <li>
+                                            : gas
+                                        </li>
+                                        <li>
+                                            : automatic
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="vehicle-location">
+                                    <p>
+                                        <img class="img-fluid" src="./Image/dealer 2.svg" alt="">
+                                        SALT LAKE CITY, UT 84115
+                                    </p>
+                                </div>
+
+                                <span class="vehicleInventoryBox-btn d-block d-md-none">View Detail</span>
+
+
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+
+
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 padding-8">
+                    <div class="vehicleInventory">
+                        <a href="">
+                            <div class="banner-carousel-indicators">
+                                <div class="vehicle-banner-img">
+                                    <img class="img-fluid" src="./Image/image 7.jpeg" alt="">
+                                </div>
+                            </div>
+                            <div class="vehicleInventoryBox-detail">
+                                <div class="vehicleInventory-wishlist " data-wishlist="true" title="Add to wishlist">
+                                    <span class="Favourite-icon">
+                                        <img class="img-fluid" src="./Image/star-blank.svg" alt="">
+                                    </span>
+                                </div>
+                                <div class="Vehicle-title">
+                                    <p class="vehicle-condition">new</p>
+                                    <h2 class="vehicleName">2022 Ford Edge</h2>
+                                    <p class="VehicleTrim">SEL</p>
+                                </div>
+                                <div class="priceDetail">
+                                    <div class="price">
+                                        <p class="current-price">$44,515</p>
+                                    </div>
+                                    <div class="emi">
+                                        <p>
+                                            <span data-toggle="tooltip" title="Estimated Payment For 60 Months">
+                                                <img class="img-fluid" src="./Image/info.svg" alt="">
+                                            </span>EMI $742/Month
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                                <div class="vehicleInventoryDescription">
+                                    <ul>
+                                        <li>
+                                            6 miles
+                                        </li>
+                                        <li>
+                                            : gas
+                                        </li>
+                                        <li>
+                                            : automatic
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="vehicle-location">
+                                    <p>
+                                        <img class="img-fluid" src="./Image/dealer 2.svg" alt="">
+                                        SALT LAKE CITY, UT 84115
+                                    </p>
+                                </div>
+                                <span class="vehicleInventoryBox-btn d-block d-md-none">View Detail</span>
+
+
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+
+
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 padding-8">
+                    <div class="vehicleInventory">
+                        <a href="">
+                            <div class="banner-carousel-indicators">
+                                <div class="vehicle-banner-img">
+                                    <img class="img-fluid" src="./Image/image 8.jpeg" alt="">
+                                </div>
+                            </div>
+                            <div class="vehicleInventoryBox-detail">
+                                <div class="vehicleInventory-wishlist " data-wishlist="true" title="Add to wishlist">
+                                    <span class="Favourite-icon">
+                                        <img class="img-fluid" src="./Image/star-blank.svg" alt="">
+                                    </span>
+                                </div>
+                                <div class="Vehicle-title">
+                                    <p class="vehicle-condition">new</p>
+                                    <h2 class="vehicleName">2022 Ford Edge</h2>
+                                    <p class="VehicleTrim">SEL</p>
+                                </div>
+                                <div class="priceDetail">
+                                    <div class="price">
+                                        <p class="current-price">$44,515</p>
+                                    </div>
+                                    <div class="emi">
+                                        <p>
+                                            <span data-toggle="tooltip" title="Estimated Payment For 60 Months">
+                                                <img class="img-fluid" src="./Image/info.svg" alt="">
+                                            </span>EMI $742/Month
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                                <div class="vehicleInventoryDescription">
+                                    <ul>
+                                        <li>
+                                            6 miles
+                                        </li>
+                                        <li>
+                                            : gas
+                                        </li>
+                                        <li>
+                                            : automatic
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="vehicle-location">
+                                    <p>
+                                        <img class="img-fluid" src="./Image/dealer 2.svg" alt="">
+                                        SALT LAKE CITY, UT 84115
+                                    </p>
+                                </div>
+                                <span class="vehicleInventoryBox-btn d-block d-md-none">View Detail</span>
+
+
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+
+
+
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 padding-8">
+                    <div class="vehicleInventory">
+                        <a href="">
+                            <div class="banner-carousel-indicators">
+                                <div class="vehicle-banner-img">
+                                    <img class="img-fluid" src="./Image/image 9.jpeg" alt="">
+                                </div>
+                            </div>
+                            <div class="vehicleInventoryBox-detail">
+                                <div class="vehicleInventory-wishlist " data-wishlist="true" title="Add to wishlist">
+                                    <span class="Favourite-icon">
+                                        <img class="img-fluid" src="./Image/star-blank.svg" alt="">
+                                    </span>
+                                </div>
+                                <div class="Vehicle-title">
+                                    <p class="vehicle-condition">new</p>
+                                    <h2 class="vehicleName">2022 Ford Edge</h2>
+                                    <p class="VehicleTrim">SEL</p>
+                                </div>
+                                <div class="priceDetail">
+                                    <div class="price">
+                                        <p class="current-price">$44,515</p>
+                                    </div>
+                                    <div class="emi">
+                                        <p>
+                                            <span data-toggle="tooltip" title="Estimated Payment For 60 Months">
+                                                <img class="img-fluid" src="./Image/info.svg" alt="">
+                                            </span>EMI $742/Month
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                                <div class="vehicleInventoryDescription">
+                                    <ul>
+                                        <li>
+                                            6 miles
+                                        </li>
+                                        <li>
+                                            : gas
+                                        </li>
+                                        <li>
+                                            : automatic
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="vehicle-location">
+                                    <p>
+                                        <img class="img-fluid" src="./Image/dealer 2.svg" alt="">
+                                        SALT LAKE CITY, UT 84115
+                                    </p>
+                                </div>
+                                <span class="vehicleInventoryBox-btn d-block d-md-none">View Detail</span>
+
+
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+
+
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 padding-8">
+                    <div class="vehicleInventory">
+                        <a href="">
+                            <div class="banner-carousel-indicators">
+                                <div class="vehicle-banner-img">
+                                    <img class="img-fluid" src="./Image/image 10.jpeg" alt="">
+                                </div>
+                            </div>
+                            <div class="vehicleInventoryBox-detail">
+                                <div class="vehicleInventory-wishlist " data-wishlist="true" title="Add to wishlist">
+                                    <span class="Favourite-icon">
+                                        <img class="img-fluid" src="./Image/star-blank.svg" alt="">
+                                    </span>
+                                </div>
+                                <div class="Vehicle-title">
+                                    <p class="vehicle-condition">new</p>
+                                    <h2 class="vehicleName">2022 Ford Edge</h2>
+                                    <p class="VehicleTrim">SEL</p>
+                                </div>
+                                <div class="priceDetail">
+                                    <div class="price">
+                                        <p class="current-price">$44,515</p>
+                                    </div>
+                                    <div class="emi">
+                                        <p>
+                                            <span data-toggle="tooltip" title="Estimated Payment For 60 Months">
+                                                <img class="img-fluid" src="./Image/info.svg" alt="">
+                                            </span>EMI $742/Month
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                                <div class="vehicleInventoryDescription">
+                                    <ul>
+                                        <li>
+                                            6 miles
+                                        </li>
+                                        <li>
+                                            : gas
+                                        </li>
+                                        <li>
+                                            : automatic
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="vehicle-location">
+                                    <p>
+                                        <img class="img-fluid" src="./Image/dealer 2.svg" alt="">
+                                        SALT LAKE CITY, UT 84115
+                                    </p>
+                                </div>
+
+                                <span class="vehicleInventoryBox-btn d-block d-md-none">View Detail</span>
+
+
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+
+
+
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 padding-8">
+                    <div class="vehicleInventory">
+                        <a href="">
+                            <div class="banner-carousel-indicators">
+                                <div class="vehicle-banner-img">
+                                    <img class="img-fluid" src="./Image/image 11.jpeg" alt="">
+                                </div>
+                            </div>
+                            <div class="vehicleInventoryBox-detail">
+                                <div class="vehicleInventory-wishlist " data-wishlist="true" title="Add to wishlist">
+                                    <span class="Favourite-icon">
+                                        <img class="img-fluid" src="./Image/star-blank.svg" alt="">
+                                    </span>
+                                </div>
+                                <div class="Vehicle-title">
+                                    <p class="vehicle-condition">new</p>
+                                    <h2 class="vehicleName">2022 Ford Edge</h2>
+                                    <p class="VehicleTrim">SEL</p>
+                                </div>
+                                <div class="priceDetail">
+                                    <div class="price">
+                                        <p class="current-price">$44,515</p>
+                                    </div>
+                                    <div class="emi">
+                                        <p>
+                                            <span data-toggle="tooltip" title="Estimated Payment For 60 Months">
+                                                <img class="img-fluid" src="./Image/info.svg" alt="">
+                                            </span>EMI $742/Month
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                                <div class="vehicleInventoryDescription">
+                                    <ul>
+                                        <li>
+                                            6 miles
+                                        </li>
+                                        <li>
+                                            : gas
+                                        </li>
+                                        <li>
+                                            : automatic
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="vehicle-location">
+                                    <p>
+                                        <img class="img-fluid" src="./Image/dealer 2.svg" alt="">
+                                        SALT LAKE CITY, UT 84115
+                                    </p>
+                                </div>
+                                <span class="vehicleInventoryBox-btn d-block d-md-none">View Detail</span>
+
+
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+
+
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 padding-8">
+                    <div class="vehicleInventory">
+                        <a href="">
+                            <div class="banner-carousel-indicators">
+                                <div class="vehicle-banner-img">
+                                    <img class="img-fluid" src="./Image/image 12.png" alt="">
+                                </div>
+                            </div>
+                            <div class="vehicleInventoryBox-detail">
+                                <div class="vehicleInventory-wishlist " data-wishlist="true" title="Add to wishlist">
+                                    <span class="Favourite-icon">
+                                        <img class="img-fluid" src="./Image/star-blank.svg" alt="">
+                                    </span>
+                                </div>
+                                <div class="Vehicle-title">
+                                    <p class="vehicle-condition">new</p>
+                                    <h2 class="vehicleName">2022 Ford Edge</h2>
+                                    <p class="VehicleTrim">SEL</p>
+                                </div>
+                                <div class="priceDetail">
+                                    <div class="price">
+                                        <p class="current-price">$44,515</p>
+                                    </div>
+                                    <div class="emi">
+                                        <p>
+                                            <span data-toggle="tooltip" title="Estimated Payment For 60 Months">
+                                                <img class="img-fluid" src="./Image/info.svg" alt="">
+                                            </span>EMI $742/Month
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                                <div class="vehicleInventoryDescription">
+                                    <ul>
+                                        <li>
+                                            6 miles
+                                        </li>
+                                        <li>
+                                            : gas
+                                        </li>
+                                        <li>
+                                            : automatic
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="vehicle-location">
+                                    <p>
+                                        <img class="img-fluid" src="./Image/dealer 2.svg" alt="">
+                                        SALT LAKE CITY, UT 84115
+                                    </p>
+                                </div>
+                                <span class="vehicleInventoryBox-btn d-block d-md-none">View Detail</span>
+
+
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+
+
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 padding-8">
+                    <div class="vehicleInventory">
+                        <a href="">
+                            <div class="banner-carousel-indicators">
+                                <div class="vehicle-banner-img">
+                                    <img class="img-fluid" src="./Image/image 13.png" alt="">
+                                </div>
+                            </div>
+                            <div class="vehicleInventoryBox-detail">
+                                <div class="vehicleInventory-wishlist " data-wishlist="true" title="Add to wishlist">
+                                    <span class="Favourite-icon">
+                                        <img class="img-fluid" src="./Image/star-blank.svg" alt="">
+                                    </span>
+                                </div>
+                                <div class="Vehicle-title">
+                                    <p class="vehicle-condition">new</p>
+                                    <h2 class="vehicleName">2022 Ford Edge</h2>
+                                    <p class="VehicleTrim">SEL</p>
+                                </div>
+                                <div class="priceDetail">
+                                    <div class="price">
+                                        <p class="current-price">$44,515</p>
+                                    </div>
+                                    <div class="emi">
+                                        <p>
+                                            <span data-toggle="tooltip" title="Estimated Payment For 60 Months">
+                                                <img class="img-fluid" src="./Image/info.svg" alt="">
+                                            </span>EMI $742/Month
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                                <div class="vehicleInventoryDescription">
+                                    <ul>
+                                        <li>
+                                            6 miles
+                                        </li>
+                                        <li>
+                                            : gas
+                                        </li>
+                                        <li>
+                                            : automatic
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="vehicle-location">
+                                    <p>
+                                        <img class="img-fluid" src="./Image/dealer 2.svg" alt="">
+                                        SALT LAKE CITY, UT 84115
+                                    </p>
+                                </div>
+                                <span class="vehicleInventoryBox-btn d-block d-md-none">View Detail</span>
+
+
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+
+
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 padding-8">
+                    <div class="vehicleInventory">
+                        <a href="">
+                            <div class="banner-carousel-indicators">
+                                <div class="vehicle-banner-img">
+                                    <img class="img-fluid" src="./Image/image 33.jpeg" alt="">
+                                </div>
+                            </div>
+                            <div class="vehicleInventoryBox-detail">
+                                <div class="vehicleInventory-wishlist " data-wishlist="true" title="Add to wishlist">
+                                    <span class="Favourite-icon">
+                                        <img class="img-fluid" src="./Image/star-blank.svg" alt="">
+                                    </span>
+                                </div>
+                                <div class="Vehicle-title">
+                                    <p class="vehicle-condition">new</p>
+                                    <h2 class="vehicleName">2022 Ford Edge</h2>
+                                    <p class="VehicleTrim">SEL</p>
+                                </div>
+                                <div class="priceDetail">
+                                    <div class="price">
+                                        <p class="current-price">$44,515</p>
+                                    </div>
+                                    <div class="emi">
+                                        <p>
+                                            <span data-toggle="tooltip" title="Estimated Payment For 60 Months">
+                                                <img class="img-fluid" src="./Image/info.svg" alt="">
+                                            </span>EMI $742/Month
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                                <div class="vehicleInventoryDescription">
+                                    <ul>
+                                        <li>
+                                            6 miles
+                                        </li>
+                                        <li>
+                                            : gas
+                                        </li>
+                                        <li>
+                                            : automatic
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="vehicle-location">
+                                    <p>
+                                        <img class="img-fluid" src="./Image/dealer 2.svg" alt="">
+                                        SALT LAKE CITY, UT 84115
+                                    </p>
+                                </div>
+                                <span class="vehicleInventoryBox-btn d-block d-md-none">View Detail</span>
+
+
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+
+
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 padding-8">
+                    <div class="vehicleInventory">
+                        <a href="">
+                            <div class="banner-carousel-indicators">
+                                <div class="vehicle-banner-img">
+                                    <img class="img-fluid" src="./Image/image 15.jpeg" alt="">
+                                </div>
+                            </div>
+                            <div class="vehicleInventoryBox-detail">
+                                <div class="vehicleInventory-wishlist " data-wishlist="true" title="Add to wishlist">
+                                    <span class="Favourite-icon">
+                                        <img class="img-fluid" src="./Image/star-blank.svg" alt="">
+                                    </span>
+                                </div>
+                                <div class="Vehicle-title">
+                                    <p class="vehicle-condition">new</p>
+                                    <h2 class="vehicleName">2022 Ford Edge</h2>
+                                    <p class="VehicleTrim">SEL</p>
+                                </div>
+                                <div class="priceDetail">
+                                    <div class="price">
+                                        <p class="current-price">$44,515</p>
+                                    </div>
+                                    <div class="emi">
+                                        <p>
+                                            <span data-toggle="tooltip" title="Estimated Payment For 60 Months">
+                                                <img class="img-fluid" src="./Image/info.svg" alt="">
+                                            </span>EMI $742/Month
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                                <div class="vehicleInventoryDescription">
+                                    <ul>
+                                        <li>
+                                            6 miles
+                                        </li>
+                                        <li>
+                                            : gas
+                                        </li>
+                                        <li>
+                                            : automatic
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="vehicle-location">
+                                    <p>
+                                        <img class="img-fluid" src="./Image/dealer 2.svg" alt="">
+                                        SALT LAKE CITY, UT 84115
+                                    </p>
+                                </div>
+                                <span class="vehicleInventoryBox-btn d-block d-md-none">View Detail</span>
+
+
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+
+
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 padding-8">
+                    <div class="vehicleInventory">
+                        <a href="">
+                            <div class="banner-carousel-indicators">
+                                <div class="vehicle-banner-img">
+                                    <img class="img-fluid" src="./Image/image 16.jpeg" alt="">
+                                </div>
+                            </div>
+                            <div class="vehicleInventoryBox-detail">
+                                <div class="vehicleInventory-wishlist " data-wishlist="true" title="Add to wishlist">
+                                    <span class="Favourite-icon">
+                                        <img class="img-fluid" src="./Image/star-blank.svg" alt="">
+                                    </span>
+                                </div>
+                                <div class="Vehicle-title">
+                                    <p class="vehicle-condition">new</p>
+                                    <h2 class="vehicleName">2022 Ford Edge</h2>
+                                    <p class="VehicleTrim">SEL</p>
+                                </div>
+                                <div class="priceDetail">
+                                    <div class="price">
+                                        <p class="current-price">$44,515</p>
+                                    </div>
+                                    <div class="emi">
+                                        <p>
+                                            <span data-toggle="tooltip" title="Estimated Payment For 60 Months">
+                                                <img class="img-fluid" src="./Image/info.svg" alt="">
+                                            </span>EMI $742/Month
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                                <div class="vehicleInventoryDescription">
+                                    <ul>
+                                        <li>
+                                            6 miles
+                                        </li>
+                                        <li>
+                                            : gas
+                                        </li>
+                                        <li>
+                                            : automatic
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="vehicle-location">
+                                    <p>
+                                        <img class="img-fluid" src="./Image/dealer 2.svg" alt="">
+                                        SALT LAKE CITY, UT 84115
+                                    </p>
+                                </div>
+                                <span class="vehicleInventoryBox-btn d-block d-md-none">View Detail</span>
+
+
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+
+
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 padding-8">
+                    <div class="vehicleInventory">
+                        <a href="">
+                            <div class="banner-carousel-indicators">
+                                <div class="vehicle-banner-img">
+                                    <img class="img-fluid" src="./Image/image 17.jpeg" alt="">
+                                </div>
+                            </div>
+                            <div class="vehicleInventoryBox-detail">
+                                <div class="vehicleInventory-wishlist " data-wishlist="true" title="Add to wishlist">
+                                    <span class="Favourite-icon">
+                                        <img class="img-fluid" src="./Image/star-blank.svg" alt="">
+                                    </span>
+                                </div>
+                                <div class="Vehicle-title">
+                                    <p class="vehicle-condition">new</p>
+                                    <h2 class="vehicleName">2022 Ford Edge</h2>
+                                    <p class="VehicleTrim">SEL</p>
+                                </div>
+                                <div class="priceDetail">
+                                    <div class="price">
+                                        <p class="current-price">$44,515</p>
+                                    </div>
+                                    <div class="emi">
+                                        <p>
+                                            <span data-toggle="tooltip" title="Estimated Payment For 60 Months">
+                                                <img class="img-fluid" src="./Image/info.svg" alt="">
+                                            </span>EMI $742/Month
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                                <div class="vehicleInventoryDescription">
+                                    <ul>
+                                        <li>
+                                            6 miles
+                                        </li>
+                                        <li>
+                                            : gas
+                                        </li>
+                                        <li>
+                                            : automatic
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="vehicle-location">
+                                    <p>
+                                        <img class="img-fluid" src="./Image/dealer 2.svg" alt="">
+                                        SALT LAKE CITY, UT 84115
+                                    </p>
+                                </div>
+                                <span class="vehicleInventoryBox-btn d-block d-md-none">View Detail</span>
+
+
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+
+
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 padding-8">
+                    <div class="vehicleInventory">
+                        <a href="">
+                            <div class="banner-carousel-indicators">
+                                <div class="vehicle-banner-img">
+                                    <img class="img-fluid" src="./Image/image 18.jpeg" alt="">
+                                </div>
+                            </div>
+                            <div class="vehicleInventoryBox-detail">
+                                <div class="vehicleInventory-wishlist " data-wishlist="true" title="Add to wishlist">
+                                    <span class="Favourite-icon">
+                                        <img class="img-fluid" src="./Image/star-blank.svg" alt="">
+                                    </span>
+                                </div>
+                                <div class="Vehicle-title">
+                                    <p class="vehicle-condition">new</p>
+                                    <h2 class="vehicleName">2022 Ford Edge</h2>
+                                    <p class="VehicleTrim">SEL</p>
+                                </div>
+                                <div class="priceDetail">
+                                    <div class="price">
+                                        <p class="current-price">$44,515</p>
+                                    </div>
+                                    <div class="emi">
+                                        <p>
+                                            <span data-toggle="tooltip" title="Estimated Payment For 60 Months">
+                                                <img class="img-fluid" src="./Image/info.svg" alt="">
+                                            </span>EMI $742/Month
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                                <div class="vehicleInventoryDescription">
+                                    <ul>
+                                        <li>
+                                            6 miles
+                                        </li>
+                                        <li>
+                                            : gas
+                                        </li>
+                                        <li>
+                                            : automatic
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="vehicle-location">
+                                    <p>
+                                        <img class="img-fluid" src="./Image/dealer 2.svg" alt="">
+                                        SALT LAKE CITY, UT 84115
+                                    </p>
+                                </div>
+                                <span class="vehicleInventoryBox-btn d-block d-md-none">View Detail</span>
+
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+
+
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 padding-8">
+                    <div class="vehicleInventory">
+                        <a href="">
+                            <div class="banner-carousel-indicators">
+                                <div class="vehicle-banner-img">
+                                    <img class="img-fluid" src="./Image/image 19.jpeg" alt="">
+                                </div>
+                            </div>
+                            <div class="vehicleInventoryBox-detail">
+                                <div class="vehicleInventory-wishlist " data-wishlist="true" title="Add to wishlist">
+                                    <span class="Favourite-icon">
+                                        <img class="img-fluid" src="./Image/star-blank.svg" alt="">
+                                    </span>
+                                </div>
+                                <div class="Vehicle-title">
+                                    <p class="vehicle-condition">new</p>
+                                    <h2 class="vehicleName">2022 Ford Edge</h2>
+                                    <p class="VehicleTrim">SEL</p>
+                                </div>
+                                <div class="priceDetail">
+                                    <div class="price">
+                                        <p class="current-price">$44,515</p>
+                                    </div>
+                                    <div class="emi">
+                                        <p>
+                                            <span data-toggle="tooltip" title="Estimated Payment For 60 Months">
+                                                <img class="img-fluid" src="./Image/info.svg" alt="">
+                                            </span>EMI $742/Month
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                                <div class="vehicleInventoryDescription">
+                                    <ul>
+                                        <li>
+                                            6 miles
+                                        </li>
+                                        <li>
+                                            : gas
+                                        </li>
+                                        <li>
+                                            : automatic
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="vehicle-location">
+                                    <p>
+                                        <img class="img-fluid" src="./Image/dealer 2.svg" alt="">
+                                        SALT LAKE CITY, UT 84115
+                                    </p>
+                                </div>
+                                <span class="vehicleInventoryBox-btn d-block d-md-none">View Detail</span>
+
+
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 padding-8">
+                    <div class="vehicleInventory">
+                        <a href="">
+                            <div class="banner-carousel-indicators">
+                                <div class="vehicle-banner-img">
+                                    <img class="img-fluid" src="./Image/image 20.jpeg" alt="">
+                                </div>
+                            </div>
+                            <div class="vehicleInventoryBox-detail">
+                                <div class="vehicleInventory-wishlist " data-wishlist="true" title="Add to wishlist">
+                                    <span class="Favourite-icon">
+                                        <img class="img-fluid" src="./Image/star-blank.svg" alt="">
+                                    </span>
+                                </div>
+                                <div class="Vehicle-title">
+                                    <p class="vehicle-condition">new</p>
+                                    <h2 class="vehicleName">2022 Ford Edge</h2>
+                                    <p class="VehicleTrim">SEL</p>
+                                </div>
+                                <div class="priceDetail">
+                                    <div class="price">
+                                        <p class="current-price">$44,515</p>
+                                    </div>
+                                    <div class="emi">
+                                        <p>
+                                            <span data-toggle="tooltip" title="Estimated Payment For 60 Months">
+                                                <img class="img-fluid" src="./Image/info.svg" alt="">
+                                            </span>EMI $742/Month
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                                <div class="vehicleInventoryDescription">
+                                    <ul>
+                                        <li>
+                                            6 miles
+                                        </li>
+                                        <li>
+                                            : gas
+                                        </li>
+                                        <li>
+                                            : automatic
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="vehicle-location">
+                                    <p>
+                                        <img class="img-fluid" src="./Image/dealer 2.svg" alt="">
+                                        SALT LAKE CITY, UT 84115
+                                    </p>
+                                </div>
+                                <span class="vehicleInventoryBox-btn d-block d-md-none">View Detail</span>
+
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 padding-8">
+                    <div class="vehicleInventory">
+                        <a href="">
+                            <div class="banner-carousel-indicators">
+                                <div class="vehicle-banner-img">
+                                    <img class="img-fluid" src="./Image/image 21.jpeg" alt="">
+                                </div>
+                            </div>
+                            <div class="vehicleInventoryBox-detail">
+                                <div class="vehicleInventory-wishlist " data-wishlist="true" title="Add to wishlist">
+                                    <span class="Favourite-icon">
+                                        <img class="img-fluid" src="./Image/star-blank.svg" alt="">
+                                    </span>
+                                </div>
+                                <div class="Vehicle-title">
+                                    <p class="vehicle-condition">new</p>
+                                    <h2 class="vehicleName">2022 Ford Edge</h2>
+                                    <p class="VehicleTrim">SEL</p>
+                                </div>
+                                <div class="priceDetail">
+                                    <div class="price">
+                                        <p class="current-price">$44,515</p>
+                                    </div>
+                                    <div class="emi">
+                                        <p>
+                                            <span data-toggle="tooltip" title="Estimated Payment For 60 Months">
+                                                <img class="img-fluid" src="./Image/info.svg" alt="">
+                                            </span>EMI $742/Month
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                                <div class="vehicleInventoryDescription">
+                                    <ul>
+                                        <li>
+                                            6 miles
+                                        </li>
+                                        <li>
+                                            : gas
+                                        </li>
+                                        <li>
+                                            : automatic
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="vehicle-location">
+                                    <p>
+                                        <img class="img-fluid" src="./Image/dealer 2.svg" alt="">
+                                        SALT LAKE CITY, UT 84115
+                                    </p>
+                                </div>
+                                                                 <span class="vehicleInventoryBox-btn d-block d-md-none">View Detail</span>
+
+
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 padding-8">
+                    <div class="vehicleInventory">
+                        <a href="">
+                            <div class="banner-carousel-indicators">
+                                <div class="vehicle-banner-img">
+                                    <img class="img-fluid" src="./Image/image 22.jpeg" alt="">
+                                </div>
+                            </div>
+                            <div class="vehicleInventoryBox-detail">
+                                <div class="vehicleInventory-wishlist " data-wishlist="true" title="Add to wishlist">
+                                    <span class="Favourite-icon">
+                                        <img class="img-fluid" src="./Image/star-blank.svg" alt="">
+                                    </span>
+                                </div>
+                                <div class="Vehicle-title">
+                                    <p class="vehicle-condition">new</p>
+                                    <h2 class="vehicleName">2022 Ford Edge</h2>
+                                    <p class="VehicleTrim">SEL</p>
+                                </div>
+                                <div class="priceDetail">
+                                    <div class="price">
+                                        <p class="current-price">$44,515</p>
+                                    </div>
+                                    <div class="emi">
+                                        <p>
+                                            <span data-toggle="tooltip" title="Estimated Payment For 60 Months">
+                                                <img class="img-fluid" src="./Image/info.svg" alt="">
+                                            </span>EMI $742/Month
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                                <div class="vehicleInventoryDescription">
+                                    <ul>
+                                        <li>
+                                            6 miles
+                                        </li>
+                                        <li>
+                                            : gas
+                                        </li>
+                                        <li>
+                                            : automatic
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="vehicle-location">
+                                    <p>
+                                        <img class="img-fluid" src="./Image/dealer 2.svg" alt="">
+                                        SALT LAKE CITY, UT 84115
+                                    </p>
+                                </div>
+                                <span class="vehicleInventoryBox-btn d-block d-md-none">View Detail</span>
+
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 padding-8">
+                    <div class="vehicleInventory">
+                        <a href="">
+                            <div class="banner-carousel-indicators">
+                                <div class="vehicle-banner-img">
+                                    <img class="img-fluid" src="./Image/image 23.jpeg" alt="">
+                                </div>
+                            </div>
+                            <div class="vehicleInventoryBox-detail">
+                                <div class="vehicleInventory-wishlist " data-wishlist="true" title="Add to wishlist">
+                                    <span class="Favourite-icon">
+                                        <img class="img-fluid" src="./Image/star-blank.svg" alt="">
+                                    </span>
+                                </div>
+                                <div class="Vehicle-title">
+                                    <p class="vehicle-condition">new</p>
+                                    <h2 class="vehicleName">2022 Ford Edge</h2>
+                                    <p class="VehicleTrim">SEL</p>
+                                </div>
+                                <div class="priceDetail">
+                                    <div class="price">
+                                        <p class="current-price">$44,515</p>
+                                    </div>
+                                    <div class="emi">
+                                        <p>
+                                            <span data-toggle="tooltip" title="Estimated Payment For 60 Months">
+                                                <img class="img-fluid" src="./Image/info.svg" alt="">
+                                            </span>EMI $742/Month
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                                <div class="vehicleInventoryDescription">
+                                    <ul>
+                                        <li>
+                                            6 miles
+                                        </li>
+                                        <li>
+                                            : gas
+                                        </li>
+                                        <li>
+                                            : automatic
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="vehicle-location">
+                                    <p>
+                                        <img class="img-fluid" src="./Image/dealer 2.svg" alt="">
+                                        SALT LAKE CITY, UT 84115
+                                    </p>
+                                </div>
+                                <span class="vehicleInventoryBox-btn d-block d-md-none">View Detail</span>
+
+
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 padding-8">
+                    <div class="vehicleInventory">
+                        <a href="">
+                            <div class="banner-carousel-indicators">
+                                <div class="vehicle-banner-img">
+                                    <img class="img-fluid" src="./Image/image 24.jpeg" alt="">
+                                </div>
+                            </div>
+                            <div class="vehicleInventoryBox-detail">
+                                <div class="vehicleInventory-wishlist " data-wishlist="true" title="Add to wishlist">
+                                    <span class="Favourite-icon">
+                                        <img class="img-fluid" src="./Image/star-blank.svg" alt="">
+                                    </span>
+                                </div>
+                                <div class="Vehicle-title">
+                                    <p class="vehicle-condition">new</p>
+                                    <h2 class="vehicleName">2022 Ford Edge</h2>
+                                    <p class="VehicleTrim">SEL</p>
+                                </div>
+                                <div class="priceDetail">
+                                    <div class="price">
+                                        <p class="current-price">$44,515</p>
+                                    </div>
+                                    <div class="emi">
+                                        <p>
+                                            <span data-toggle="tooltip" title="Estimated Payment For 60 Months">
+                                                <img class="img-fluid" src="./Image/info.svg" alt="">
+                                            </span>EMI $742/Month
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                                <div class="vehicleInventoryDescription">
+                                    <ul>
+                                        <li>
+                                            6 miles
+                                        </li>
+                                        <li>
+                                            : gas
+                                        </li>
+                                        <li>
+                                            : automatic
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="vehicle-location">
+                                    <p>
+                                        <img class="img-fluid" src="./Image/dealer 2.svg" alt="">
+                                        SALT LAKE CITY, UT 84115
+                                    </p>
+                                   
+                                    
+                                </div>
+                                 <span class="vehicleInventoryBox-btn d-block d-md-none">View Detail</span>
+
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- section 3  -->
+
+
+    <section class="pagination-seaction">
+        <div class="container-mid">
+            <div class="row">
+                <div class="col-12">
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination justify-content-center">
+                          <!-- <li class="page-item disabled">
+                            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                          </li> -->
+                          <li class="page-item"><a class="page-link" href="#">1</a></li>
+                          <li class="page-item"><a class="page-link" href="#">2</a></li>
+                          <li class="page-item"><a class="page-link" href="#">3</a></li>
+                          <li class="page-item"><a class="page-link" href="#">...</a></li>
+                          <li class="page-item"><a class="page-link" href="#">3,649</a></li>
+                          <li class="page-item"><a class="page-link" href="#">>></a></li>
+                         
+                        </ul>
+                      </nav>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+<!-- section 3 -->
+
+
+
+<footer class="footer_area">
+    <div class="container-mid">
+        <div class="row">
+
+            <div class="col-xl-3  col-md-3 col-lg-3">
+                <div class="single-footer-widget ">
+
+                    <h6 class="widget-title">Buying & Selling</h6>
+
+                    <div class="footer_menu">
+                        <nav>
+                            <ul>
+                                <li class="menu-item"><a href="#">Home</a></li>
+                                <li><a href="#">Car For Sale</a></li>
+                                <li><a href="#">Sell My car</a></li>
+                                <li><a href="#">Car Research</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3  col-md-3 col-lg-3">
+                <div class="single-footer-widget ">
+
+                    <h6 class="widget-title">Our Company</h6>
+
+                    <div class="footer_menu">
+                        <nav>
+                            <ul>
+                                <li><a href="#">Claim your Dealership</a></li>
+                                <li><a href="#">Advertise with us</a></li>
+                                <li><a href="#">Manage your Dealership</a></li>
+                                <li><a href="#">Contact & Support</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-3  col-md-3 col-lg-3">
+                <div class="single-footer-widget">
+
+                    <h6 class="widget-title">Dealership</h6>
+
+                    <div class="footer_menu">
+                        <nav>
+                            <ul>
+                                <li><a href="#">Find Car Dealership By Make</a></li>
+                                <li><a href="#">Find Car Dealership By State</a></li>
+                                <li><a href="#">Find Car Dealership Near Me</a></li>
+
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-3  col-md-3 col-lg-3 ">
+                <div class="single-footer-widget ">
+
+                    <h6 class="widget-title">Terms & Privacy Policy</h6>
+
+                    <div class="footer_menu">
+                        <nav>
+                            <ul>
+                                <li><a href="#">Accessibility Statement</a></li>
+                                <li><a href="#">CCPA Privacy Notice</a></li>
+                                <li><a href="#">Privacy Statement</a></li>
+                                <li><a href="#">Shine the Light</a></li>
+                                <li><a href="#">Terms and Conditions</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+
+
+
+</footer>
+<div class="copywrite-section">
+    <div class="container-mid">
+        <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                <div class="copywrite-content text-center">
+                    <p>
+                        © and ™ Car Dealerships, Inc. All rights reserved. Vehicle photos © Evox Images © VinQuery
+                        Solutions, © DataOne, © VinAudit, © ip-api.com
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+</body>
+
+</html>
+
+
+
+<script>
+
+    function overflowhidden(){
+  
+       const bodytag =  document.getElementById("body")
+         bodytag.classList.toggle('overflow-hidden')
+    }
+   
+  
+  </script>

@@ -1,0 +1,1209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Car Dealerships</title>
+    <link rel="stylesheet" href="./CSS/bootstrap.css">
+    <script src="./Javascript/jquery.js"></script>
+    <script src="./Javascript/poper.js"></script>
+    <script src="./Javascript/bootstrap.js"></script>
+    <script src="./Javascript/script.js"></script>
+    <link rel="stylesheet" href="./CSS/Style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+<style>
+    /* body{
+        background-color: white;
+        color: black;
+    }
+    .dark-mode{
+        background-color: b;
+    } */
+</style>
+</head>
+
+<body id="body">
+    <header class="site-header">
+        <div class="container-mid">
+            <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand" href="index.html">
+                    <img class="img-fluid" src="./Image/cardealerships.webp" alt="logo Ahhpc" href="index.html">
+                </a>
+
+                <div class="location-section" id="button">
+                    
+                    <span class="location">
+                        <img class="img-fluid" src="./Image/icons8-location-50.png" alt="">
+                    </span>
+                    <span>Delhi ,IA</span>
+                </div>
+                
+
+                <button onclick="overflowhidden()" class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around ml-auto "
+                    type="button" data-toggle="collapse" data-target="#myname" aria-expanded="false"
+                    aria-label="Toggle navigation" id="button">
+                    <span class="toggler-icon top-bar text-center"></span>
+                    <span class="toggler-icon middle-bar text-center"></span>
+                    <span class="toggler-icon bottom-bar text-center"></span>
+                </button>
+
+                <div class="collapse navbar-collapse " id="myname">
+                    <ul class="navbar-nav  ml-auto text-center">
+                        <li class="nav-item "><a class="nav-link active drop-item " href="index.html">Home</a></li>
+                        <li class="nav-item drop-menu"><a class="nav-link  drop-items" href="sale.html">Cars For
+                                Sale</a></li>
+                        <li class="nav-item drop-menu"><a class="nav-link  drop-items" href="cardealer.html">Car Dealers</a></li>
+                        <li class="nav-item drop-menu"><a class="nav-link  drop-items" href="carsearch.html">Car Research</a></li>
+                        <li class="nav-item drop-menu"><a class="nav-link  drop-items" href="sell.html">Sell My Car</a></li>
+                        <li class="nav-item drop-menu"><a class="nav-link  drop-items" href="#">Blog</a></li>
+                        <button class="nav-wishlist-btn" data-action="openWishlistSlide">
+                            <img class="img-fluid"
+                                src="https://storage.googleapis.com/global-slt/classifieds-assets/images/wishlist.svg"
+                                alt="Vechile-Whislist">
+                            <span>0</span>
+                        </button>
+
+                        <button id="btn" onclick="myfunction()">click</button>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+    </header>
+
+    <!-- section 1  -->
+
+    <section class="home-Bannar-section">
+        <div class="container-mid">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                    <div class="home-bannar-text">
+                        <h1>Save a lot on your next ride!</h1>
+                        <div class="home-bannar-btn">
+                            <div class="row">
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12  ">
+                                    <a class="home-bannar-button">Find Used Cars</a>
+                                </div>
+
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                    <a class="home-bannar-button-active">Find a new Car</a>
+                                </div>
+
+                                <div class="col-xl-12 col-lg-12 -col-md-12 col-sm-12">
+                                    <a class="home-bannar-button">Find Car Delearships Near Me</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                    <div class="bannar-image">
+                        <img class="img-fluid " src="./Image/find-car-dealerships.webp" alt="">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section 2  -->
+
+    <section class="research-section">
+        <div class="container-mid">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                    <div class="car-research">
+                        <div class="research-heading">
+                            <h2>Get a Good Take On Car Research</h2>
+                            <p>Research about all car brands and models with their specifications, features, reviews and
+                                more</p>
+                            <button class="research-button">Car Research</button>
+                        </div>
+                        <div class="research-icon">
+                            <img class="img-fluid" src="./Image/car-research.webp" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                    <div class="car-research">
+                        <div class="research-heading">
+                            <h2>Sell Your Cars For Free With Ease</h2>
+                            <p>Skip the hassle of finding a car buyer - our verified dealers offer free car valuations
+                                and direct offers</p>
+                            <button class="research-button">Sell My Car</button>
+                        </div>
+                        <div class="research-icon">
+                            <img class="img-fluid" src="./Image/sell-your-car.webp" alt="">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- section 3 -->
+
+    <section class="affordable-car">
+        <div class="container-mid">
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12">
+                    <div class="affordable">
+                        <h2>Affordable
+                            <span class="car-heading">Cars</span>
+                            For Sale
+                        </h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row ">
+                <div class="col-xl-2 col-lg-2 col-md-4">
+
+                    <a class="car-prize " href="#">
+                        <img class="img-fluid" src="./Image/under5k.webp" alt="">
+                        <span>Car Under $5000</span>
+                    </a>
+
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-4">
+
+                    <a class="car-prize " href="#">
+                        <img class="img-fluid" src="./Image/under8k.webp" alt="">
+                        <span>Car Under $8000</span>
+                    </a>
+
+
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-4 ">
+
+                    <a class="car-prize " href="#">
+                        <img class="img-fluid  " src="./Image/under10k.webp" alt="">
+                        <span>Car Under $10000</span>
+                    </a>
+
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-4 ">
+
+                    <a class="car-prize " href="#">
+                        <img class="img-fluid " src="./Image/under15k.webp" alt="">
+                        <span>Car Under $15000</span>
+                    </a>
+
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-4">
+
+                    <a class="car-prize " href="#">
+                        <img class="img-fluid " src="./Image/under20k.webp" alt="">
+                        <span>Car Under $20000</span>
+                    </a>
+
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-4">
+
+                    <a class="car-prize " href="#">
+                        <img class="img-fluid" src="./Image/under25k.webp" alt="">
+                        <span>Car Under $25000</span>
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- section 4 -->
+
+    <section class="popular-car-section">
+        <div class="container-mid">
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 px-1 px-md-2">
+                    <div class="popular-modal">
+                        <h2>Popular
+                            <span class="car-heading">Cars</span>
+                            Models
+                        </h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row ">
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-12  px-md-2">
+                    <a class="popular-car" href="">
+                        BMW 3-series
+                    </a>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-12  px-md-2">
+                    <a class="popular-car" href="">
+                        Chevy Camaro
+                    </a>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-12  px-md-2">
+                    <a class="popular-car" href="">
+                        Chevy Cruze
+                    </a>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-12  px-md-2">
+                    <a class="popular-car" href="">
+                        Chevy Equimax
+                    </a>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-12  px-md-2">
+                    <a class="popular-car" href="">
+                        Chevy Malibu
+                    </a>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-12 px-md-2">
+                    <a class="popular-car" href="">
+                        Chevy Silverdo
+                    </a>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-12  px-md-2">
+                    <a class="popular-car" href="">
+                        Chevy Tahoe
+                    </a>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-12  px-md-2">
+                    <a class="popular-car" href="">
+                        Chrysler200
+                    </a>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-12  px-md-2">
+                    <a class="popular-car" href="">
+                        Dodge Charger
+                    </a>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-12  px-md-2">
+                    <a class="popular-car" href="">
+                        Ford Escape
+                    </a>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-12  px-md-2">
+                    <a class="popular-car" href="">
+                        Ford Explore
+                    </a>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-12  px-md-2">
+                    <a class="popular-car" href="">
+                        Ford F1 150
+                    </a>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-12  px-md-2">
+                    <a class="popular-car" href="">
+                        Ford Focus
+                    </a>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-12  px-md-2">
+                    <a class="popular-car" href="">
+                        Ford Fusion
+                    </a>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-12  px-md-2">
+                    <a class="popular-car" href="">
+                        Ford Mustang
+                    </a>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-12 px-md-2">
+                    <a class="popular-car" href="">
+                        Honda Accord
+                    </a>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-12  px-md-2">
+                    <a class="popular-car" href="">
+                        Honda Civic
+                    </a>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-12  px-md-2">
+                    <a class="popular-car" href="">
+                        Honda Cr-v
+                    </a>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-12  px-md-2">
+                    <a class="popular-car" href="">
+                        Hondai-Elanta
+                    </a>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-12  px-md-2">
+                    <a class="popular-car" href="">
+                        Hondai Sonata
+                    </a>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-12  px-md-2">
+                    <a class="popular-car" href="">
+                        Jeep Cherokee
+                    </a>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-12  px-md-2">
+                    <a class="popular-car" href="">
+                        Jeep Compass
+                    </a>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-12  px-md-2">
+                    <a class="popular-car" href="">
+                        Jeep wrangler
+                    </a>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-12  px-md-2">
+                    <a class="popular-car" href="">
+                        NissaN Altima
+                    </a>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-12  px-md-2">
+                    <a class="popular-car" href="">
+                        Ram 1500
+                    </a>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-12 px-md-2">
+                    <a class="popular-car" href="">
+                        Sabarr Ascent
+                    </a>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-12  px-md-2">
+                    <a class="popular-car" href="">
+                        Toyota Camry
+                    </a>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-12  px-md-2">
+                    <a class="popular-car" href="">
+                        Toyota Rary
+                    </a>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-12  px-md-2">
+                    <a class="popular-car" href="">
+                        Toyota Tacoma
+                    </a>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-12  px-md-2">
+                    <a class="popular-car" href="">
+                        Honda City
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- section 5 -->
+
+    <section class="dealer-section">
+
+        <div class="container-mid">
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 ">
+                    <div class="dealer-heading">
+                        <h2>Buy
+                            <span class="car-heading"> Used Cars</span>
+                            By Category
+                        </h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-sm-12">
+                    <div class="car-category">
+                        <ul class="nav nav-tabs">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-toggle="tab" href="#Body">Body Style</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#fuel">Fuel</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " data-toggle="tab" href="#Budget">Budget</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content">
+                <div class="tab-plane active " id="Body">
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12  px-md-2">
+                            <a class="car-content" href="">
+                                <span> Used convertible for sale</span>
+                                <img class="img-fluid" src="./Image/convertible.webp" alt="">
+                            </a>
+
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12  px-md-2">
+                            <a class="car-content" href="">
+                                <span> Used hatchback for sale</span>
+                                <img class="img-fluid" src="./Image/hatchback.webp" alt="">
+                            </a>
+
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12  px-md-2">
+                            <a class="car-content" href="">
+                                <span> Used sedan for sale</span>
+                                <img class="img-fluid" src="./Image/sedan.webp" alt="">
+                            </a>
+
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12  px-md-2">
+                            <a class="car-content" href="">
+                                <span> Used suv for sale</span>
+                                <img class="img-fluid" src="./Image/suv.webp" alt="">
+                            </a>
+
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12  px-md-2">
+                            <a class="car-content" href="">
+                                <span> Used truck for sale</span>
+                                <img class="img-fluid" src="./Image/truck.webp" alt="">
+                            </a>
+
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12  px-md-2">
+                            <a class="car-content" href="">
+                                <span> Used pickup for sale</span>
+                                <img class="img-fluid" src="./Image/pickup.webp" alt="">
+                            </a>
+
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12  px-md-2">
+                            <a class="car-content" href="">
+                                <span> Used minivan for sale</span>
+                                <img class="img-fluid" src="./Image/minivan.webp" alt="">
+                            </a>
+
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12  px-md-2">
+                            <a class="car-content" href="">
+                                <span> Used wagon for sale</span>
+                                <img class="img-fluid" src="./Image/wagon.webp" alt="">
+                            </a>
+
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12  px-md-2">
+                            <a class="car-content" href="">
+                                <span> Used coupe for sale</span>
+                                <img class="img-fluid" src="./Image/coupe.webp" alt="">
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="fuel" class="tab-plane">
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12  px-md-2">
+                            <a class="car-content" href="">
+                                <span>Biodiesel cars for sale</span>
+                                <img class="img-fluid" src="./Image/biodiesel.webp" alt="">
+                            </a>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12  px-md-2">
+                            <a class="car-content" href="">
+                                <span>Used Gas Cars For Sale</span>
+                                <img class="img-fluid" src="./Image/gas.webp" alt="">
+                            </a>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12  px-md-2">
+                            <a class="car-content" href="">
+                                <span>Diesel Car for sale</span>
+                                <img class="img-fluid" src="./Image/diesel.webp" alt="">
+                            </a>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12  px-md-2">
+                            <a class="car-content" href="">
+                                <span>Electric Car for Sale</span>
+                                <img class="img-fluid" src="./Image/electriccar.webp" alt="">
+                            </a>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12  px-md-2">
+                            <a class="car-content" href="">
+                                <span>Flexfuel Car For Sale</span>
+                                <img class="img-fluid" src="./Image/flexfuel.webp" alt="">
+                            </a>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12  px-md-2">
+                            <a class="car-content" href="">
+                                <span> Used Gasoline Cars For Sale</span>
+                                <img class="img-fluid" src="./Image/gas.webp" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="Budget" class="tab-plane">
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12  px-md-2">
+                            <a class="car-content-budget" href="">
+                                <span>Used Cars under 3k</span>
+                            </a>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12  px-md-2">
+                            <a class="car-content-budget" href="">
+                                <span>Used Cars under 5k</span>
+                            </a>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12  px-md-2">
+                            <a class="car-content-budget" href="">
+                                <span>Used Cars under 6k</span>
+                            </a>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 px-md-2">
+                            <a class="car-content-budget" href="">
+                                <span>Used Cars under 7k</span>
+                            </a>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12  px-md-2">
+                            <a class="car-content-budget" href="">
+                                <span>Used Cars under 8k</span>
+                            </a>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12  px-md-2">
+                            <a class="car-content-budget" href="">
+                                <span>Used Cars under 9k</span>
+                            </a>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12  px-md-2">
+                            <a class="car-content-budget" href="">
+                                <span>Used Cars under 10k</span>
+                            </a>
+                        </div>
+
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12  px-md-2">
+                            <a class="car-content-budget" href="">
+                                <span>Used Cars under 12k</span>
+                            </a>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12  px-md-2">
+                            <a class="car-content-budget" href="">
+                                <span>Used Cars under 15k</span>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- section 5  -->
+
+    <section class="dealership-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                    <div class="clain-dealership">
+                        <div class="clain-dealership-image">
+                            <div class="clain-dealership-images-box">
+                                <img class="img-fluid" src="./Image/claim-business.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="clain-dealership-heading">
+                            <div class="heading">
+                                <h2>Help car shoppers to find your dealership across USA</h2>
+                                <p>Add or verify your dealership now</p>
+                            </div>
+
+                            <a class="dealership-button" href="">Clain Your Dealership</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+
+
+
+    <!-- section 6 -->
+
+    <section class="popular-new-car">
+        <div class="container-mid">
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                    <div class="popular-heading">
+                        <h2>Popular
+                            <span class="car-heading">New Cars</span>
+                            For Sale
+                        </h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 px-md-2">
+                    <a class="popular-car" href="">
+                        2023 Ford F-150 For Sale
+                    </a>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12  px-md-2">
+                    <a class="popular-car" href="">
+                        2023 Ford Ranger For Sale
+                    </a>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12  px-md-2">
+                    <a class="popular-car" href="">
+                        2023 Honda CR-V For Sale
+                    </a>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12  px-md-2">
+                    <a class="popular-car" href="">
+                        2023 RAM 1500 For Sale
+                    </a>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 px-md-2">
+                    <a class="popular-car" href="">
+                        2023 Honda Civic For Sale
+                    </a>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12  px-md-2">
+                    <a class="popular-car" href="">
+                        2023 Nissan Rogue For Sale
+                    </a>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12  px-md-2">
+                    <a class="popular-car" href="">
+                        2023 Ford Mustang For Sale
+                    </a>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12  px-md-2">
+                    <a class="popular-car" href="">
+                        2023 Toyata Camry For Sale
+                    </a>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12  px-md-2">
+                    <a class="popular-car" href="">
+                        2023 Subaru Outback For Sale
+                    </a>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12  px-md-2">
+                    <a class="popular-car" href="">
+                        2023 Hyundai Sonata For Sale
+                    </a>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12  px-md-2">
+                    <a class="popular-car" href="">
+                        2023 GMC Sierra 1500 For Sale
+                    </a>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12  px-md-2">
+                    <a class="popular-car" href="">
+                        2023 Toyata Sequoia For Sale
+                    </a>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12  px-md-2">
+                    <a class="popular-car" href="">
+                        2023 Toyata Tacoma For Sale
+                    </a>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12  px-md-2">
+                    <a class="popular-car" href="">
+                        2023 Jeep wrangler For Sale
+                    </a>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12  px-md-2">
+                    <a class="popular-car" href="">
+                        2023 ChevySilverdo For Sale
+                    </a>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12  px-md-2">
+                    <a class="popular-car" href="">
+                        2023 Jeep Grand For Sale
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- section 7  -->
+
+    <section class="dealer-car-section">
+
+        <div class="container-mid">
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 ">
+                    <div class="dealer-heading">
+                        <h2>Dealer
+                            <span class="car-heading">Cars</span>
+                            For Sale
+                            <span class="car-heading">By Brand</span>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-sm-12">
+                    <div class="car-category">
+                        <ul class="nav nav-tabs">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-toggle="tab" href="#newcar"> New Cars</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#usedcar">Used Cars</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content">
+                <div class="tab-plane active  car-deals" id="newcar">
+                    <div class="row justify-contet-center">
+
+                        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6 p-1 p-md-2">
+                            <a class="search-Wrapper" href="">Acura</a>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6 p-1 p-md-2">
+                            <a class="search-Wrapper" href="">Alfa Romeo</a>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6 p-1 p-md-2">
+                            <a class="search-Wrapper" href="">Aston Martin </a>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6 p-1 p-md-2">
+                            <a class="search-Wrapper" href="">Audi</a>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6 p-1 p-md-2">
+                            <a class="search-Wrapper" href="">Bently</a>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6 p-1 p-md-2">
+                            <a class="search-Wrapper" href="">BMW</a>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6 p-1 p-md-2">
+                            <a class="search-Wrapper" href="">Buick</a>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6 p-1 p-md-2">
+                            <a class="search-Wrapper" href="">Cadillac</a>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6 p-1 p-md-2">
+                            <a class="search-Wrapper" href="">Chervolt</a>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6 p-1 p-md-2">
+                            <a class="search-Wrapper" href="">Chrysler</a>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6 p-1 p-md-2">
+                            <a class="search-Wrapper" href="">Dodge</a>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6 p-1 p-md-2">
+                            <a class="search-Wrapper" href="">Ferrari</a>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6 p-1 p-md-2">
+                            <a class="search-Wrapper" href="">Fait</a>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6 p-1 p-md-2">
+                            <a class="search-Wrapper" href="">Ford</a>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6 p-1 p-md-2">
+                            <a class="search-Wrapper" href="">Genesis</a>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6 p-1 p-md-2">
+                            <a class="search-Wrapper" href="">GMC</a>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6 p-1 p-md-2">
+                            <a class="search-Wrapper" href="">Honda</a>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6 p-1 p-md-2">
+                            <a class="search-Wrapper" href="">Hyundai</a>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6 p-1 p-md-2">
+                            <a class="search-Wrapper" href="">infiiti</a>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6 p-1 p-md-2">
+                            <a class="search-Wrapper" href="">Jaguar</a>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6 p-1 p-md-2">
+                            <a class="search-Wrapper" href="">Jeep</a>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6 p-1 p-md-2">
+                            <a class="search-Wrapper" href="">Kia</a>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6 p-1 p-md-2">
+                            <a class="search-Wrapper" href="">Nexa</a>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6 p-1 p-md-2">
+                            <a class="search-Wrapper" href="">Land Lover</a>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6 p-1 p-md-2">
+                            <a class="search-Wrapper" href="">Lexus</a>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6 p-1 p-md-2">
+                            <a class="search-Wrapper" href="">Lincolin</a>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6 p-1 p-md-2">
+                            <a class="search-Wrapper" href="">Miserati</a>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6 p-1 p-md-2">
+                            <a class="search-Wrapper" href="">Mazda</a>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6 p-1 p-md-2">
+                            <a class="search-Wrapper" href="">McLaren</a>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6 p-1 p-md-2">
+                            <a class="search-Wrapper" href="">Mercedes Benz</a> 
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div id="usedcar" class="tab-plane  car-deals">
+                    <div class="row">
+                        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6 p-1 p-md-2">
+                            <a class="search-Wrapper" href="">Acura</a>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6 p-1 p-md-2">
+                            <a class="search-Wrapper" href="">Alfa Remeo</a>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6 p-1 p-md-2">
+                            <a class="search-Wrapper" href="">Aston Martin </a>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6 p-1 p-md-2">
+                            <a class="search-Wrapper" href="">Audi</a>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6 p-1 p-md-2">
+                            <a class="search-Wrapper" href="">Bentley</a>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6 p-1 p-md-2">
+                            <a class="search-Wrapper" href="">BMW</a>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6 p-1 p-md-2">
+                            <a class="search-Wrapper" href="">Buick</a>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6 p-1 p-md-2">
+                            <a class="search-Wrapper" href="">cadillac</a>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6 p-1 p-md-2">
+                            <a class="search-Wrapper" href="">Chervolt</a>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6 p-1 p-md-2">
+                            <a class="search-Wrapper" href="">Chrysler</a>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6 p-1 p-md-2">
+                            <a class="search-Wrapper" href="">Dodge</a>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6 p-1 p-md-2">
+                            <a class="search-Wrapper" href="">Ferrari</a>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6 p-1 p-md-2">
+                            <a class="search-Wrapper" href="">Fait</a>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6 p-1 p-md-2">
+                            <a class="search-Wrapper" href="">Ford</a>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6 p-1 p-md-2">
+                            <a class="search-Wrapper" href="">Gensis</a>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6 p-1 p-md-2">
+                            <a class="search-Wrapper" href="">GMC</a>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6 p-1  p-md-2">
+                            <a class="search-Wrapper" href="">Honda</a>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6 p-1 p-md-2">
+                            <a class="search-Wrapper" href="">Hyundai</a>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6 p-1 p-md-2">
+                            <a class="search-Wrapper" href="">infiniti</a>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6 p-1 p-md-2">
+                            <a class="search-Wrapper" href="">Jaguar</a>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6 p-1 p-md-2">
+                            <a class="search-Wrapper" href="">Jeep</a>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6 p-1 p-md-2">
+                            <a class="search-Wrapper" href="">Kia</a>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6 p-1 p-md-2">
+                            <a class="search-Wrapper" href="">Lamborghini</a>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6 p-1 p-md-2">
+                            <a class="search-Wrapper" href="">Land Lover</a>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6 p-1 p-md-2">
+                            <a class="search-Wrapper" href="">Lexus</a>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6 p-1 p-md-2">
+                            <a class="search-Wrapper" href="">Lincoln</a>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6 p-1 p-md-2">
+                            <a class="search-Wrapper" href="">Nissan</a>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6 p-1 p-md-2">
+                            <a class="search-Wrapper" href="">Porsche</a>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6 p-1 p-md-2">
+                            <a class="search-Wrapper" href="">Ram</a>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6 p-1 p-md-2">
+                            <a class="search-Wrapper" href="">Tesla</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- section 8  -->
+    <section class="blog-section">
+        <div class="container-mid">
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                    <div class="blog-heading">
+                        <h2>All
+                            <span class="car-heading">Blog</span>
+                            And
+                            <span class="car-heading">Reviews</span>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blog-image-section">
+                <div class="row">
+
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                        <div class="blog-wrapper">
+                            <div class="blog-img">
+                                <a href="">
+                                    <img class="img-fluid image" src="./Image/cam.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="blog-content">
+                                <p class="blog-title">
+                                    <a href="">
+                                        Chevrolet Debuts Brand New 2024 Silverado 2500HD ZR2
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                        <div class="blog-wrapper">
+                            <div class="blog-img">
+                                <a href="">
+                                    <img class="img-fluid image" src="./Image/f.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="blog-content">
+                                <p class="blog-title">
+                                    <a href="">
+                                        Chevrolet Debuts Brand New 2024 Silverado 2500HD ZR2
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                        <div class="blog-wrapper">
+                            <div class="blog-img">
+                                <a href="">
+                                    <img class="img-fluid image" src="./Image/marseti.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="blog-content">
+                                <p class="blog-title">
+                                    <a href="">
+                                        Chevrolet Debuts Brand New 2024 Silverado 2500HD ZR2
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                        <div class="blog-wrapper">
+                            <div class="blog-img">
+                                <a href="">
+                                    <img class="img-fluid" src="./Image/Untitled-design_11zon.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="blog-content">
+                                <p class="blog-title">
+                                    <a href="">
+                                        Chevrolet Debuts Brand New 2024 Silverado 2500HD ZR2
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+
+
+
+            <div class="row">
+                <div class="col-xl-12 col-md-12 col-sm-12">
+                    <div class=" blog-button text-center">
+                        <a class="button-blog" href="">View All</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <footer class="footer_area">
+        <div class="container-mid">
+            <div class="row">
+
+                <div class="col-xl-3  col-md-3 col-lg-3">
+                    <div class="single-footer-widget ">
+
+                        <h6 class="widget-title">Buying & Selling</h6>
+
+                        <div class="footer_menu">
+                            <nav>
+                                <ul>
+                                    <li class="menu-item"><a href="#">Home</a></li>
+                                    <li><a href="#">Car For Sale</a></li>
+                                    <li><a href="#">Sell My car</a></li>
+                                    <li><a href="#">Car Research</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3  col-md-3 col-lg-3">
+                    <div class="single-footer-widget ">
+
+                        <h6 class="widget-title">Our Company</h6>
+
+                        <div class="footer_menu">
+                            <nav>
+                                <ul>
+                                    <li><a href="#">Claim your Dealership</a></li>
+                                    <li><a href="#">Advertise with us</a></li>
+                                    <li><a href="#">Manage your Dealership</a></li>
+                                    <li><a href="#">Contact & Support</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3  col-md-3 col-lg-3">
+                    <div class="single-footer-widget">
+
+                        <h6 class="widget-title">Dealership</h6>
+
+                        <div class="footer_menu">
+                            <nav>
+                                <ul>
+                                    <li><a href="#">Find Car Dealership By Make</a></li>
+                                    <li><a href="#">Find Car Dealership By State</a></li>
+                                    <li><a href="#">Find Car Dealership Near Me</a></li>
+
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3  col-md-3 col-lg-3 ">
+                    <div class="single-footer-widget ">
+
+                        <h6 class="widget-title">Terms & Privacy Policy</h6>
+
+                        <div class="footer_menu">
+                            <nav>
+                                <ul>
+                                    <li><a href="#">Accessibility Statement</a></li>
+                                    <li><a href="#">CCPA Privacy Notice</a></li>
+                                    <li><a href="#">Privacy Statement</a></li>
+                                    <li><a href="#">Shine the Light</a></li>
+                                    <li><a href="#">Terms and Conditions</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+
+
+
+    </footer>
+    <div class="copywrite-section">
+        <div class="container-mid">
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                    <div class="copywrite-content text-center">
+                        <p>
+                            © and ™ Car Dealerships, Inc. All rights reserved. Vehicle photos © Evox Images © VinQuery
+                            Solutions, © DataOne, © VinAudit, © ip-api.com
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- popup -->
+
+    <div class="popup">
+        <div class="container-mid">
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+
+                    <div class="popup-content">
+                        <span class="close">&times</span>
+                        <h2>Enter your location</h2>
+                        <p>Update your location to get nearby cars & dealership list. Test drive & Home delivery options
+                        </p>
+                        <input type="text" placeholder="Enter Zip Code , City or zipCode">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+
+<script>
+
+  function overflowhidden(){
+
+     const bodytag =  document.getElementById("body")
+       bodytag.classList.toggle('overflow-hidden')
+  }
+ 
+
+</script>
+
+<script>
+    function myfunction(){
+        let element = document.body;
+        element.classList.toggle("dark-mode");
+    }
+</script>
+
+<!-- document.getElementById("button").addEventListener("click", function () {
+    document.querySelector(".popup").style.display = "flex"
+})
+document.querySelector(".close").addEventListener("click", function () {
+    document.querySelector(".popup").style.display = "none";
+}) -->

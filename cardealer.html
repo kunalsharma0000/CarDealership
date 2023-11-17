@@ -1,0 +1,1504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Car Dealerships</title>
+    <link rel="stylesheet" href="./CSS/bootstrap.css">
+    <script src="./Javascript/jquery.js"></script>
+    <script src="./Javascript/poper.js"></script>
+    <script src="./Javascript/bootstrap.js"></script>
+    <script src="./Javascript/script.js"></script>
+    <link rel="stylesheet" href="./CSS/Style.css">
+    <link rel="stylesheet" href="./CSS/dealer.css">
+    <link rel="stylesheet" href="./CSS/sale.css">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+
+</head>
+
+<body id="body">
+    <header class="site-header">
+        <div class="container-mid">
+            <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand" href="index.html">
+                    <img class="img-fluid" src="./Image/cardealerships.webp" alt="logo Ahhpc" href="index.html">
+                </a>
+
+                <div class="location-section" id="button">
+                    
+                    <span class="location">
+                        <img class="img-fluid" src="./Image/icons8-location-50.png" alt="">
+                    </span>
+                    <span>Delhi ,IA</span>
+                </div>
+
+                <button onclick="overflowhidden()" class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around ml-auto "
+                    type="button" data-toggle="collapse" data-target="#myname" aria-expanded="false"
+                    aria-label="Toggle navigation" id="button">
+                    <span class="toggler-icon top-bar text-center"></span>
+                    <span class="toggler-icon middle-bar text-center"></span>
+                    <span class="toggler-icon bottom-bar text-center"></span>
+                </button>
+
+                <div class="collapse navbar-collapse " id="myname">
+                    <ul class="navbar-nav  ml-auto text-center">
+                        <li class="nav-item "><a class="nav-link active drop-item " href="index.html">Home</a></li>
+                        <li class="nav-item drop-menu"><a class="nav-link  drop-items" href="sale.html">Cars For
+                                Sale</a></li>
+                        <li class="nav-item drop-menu"><a class="nav-link  drop-items" href="cardealer.html">Car Dealers</a></li>
+                        <li class="nav-item drop-menu"><a class="nav-link  drop-items" href="carsearch.html">Car Research</a></li>
+                        <li class="nav-item drop-menu"><a class="nav-link  drop-items" href="sell.html">Sell My Car</a></li>
+                        <li class="nav-item drop-menu"><a class="nav-link  drop-items" href="#">Blog</a></li>
+                        <button class="nav-wishlist-btn" data-action="openWishlistSlide">
+                            <img class="img-fluid"
+                                src="https://storage.googleapis.com/global-slt/classifieds-assets/images/wishlist.svg"
+                                alt="Vechile-Whislist">
+                            <span>0</span>
+                        </button>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+    </header>
+
+
+    <!-- section 1 -->
+
+    <section class="car-dealer-section">
+        <div class="container-mid">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="page-heading">Car Dealership in Delhi, California</h1>
+                    <p mb-3>Lorem ipsum dolor sit amet consectetur adipisicing elit. A quaerat laudantium consequatur accusamus. Minus non commodi laudantium fuga deserunt? Fugiat. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id, mollitia!</p>
+
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-xl-7 col-lg-8 col-md-12">
+                    <div class="searchform">
+                        <div class="searchform-design">
+                            <ul class="nav nav-pills">
+                                <li class="nav-item">
+                                    <a href="" class="nav-link active" data-toggle="pill">Find Dealer By Make</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="" class="nav-link " data-toggle="pill">Find Dealer By Name</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content">
+                                <div class="tab-pane show active">
+                                    <form action="" class="form-inner theme-select2-design">
+                                        <div class="row">
+                                            <div class="col-12 col-sm-12 col-md-9 col-lg-9 col-xl-9">
+                                                <div class="row">
+                                                    <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                                                        <div class="form-field">
+                                                            <select name="" id="" class="search-filter">
+                                                                <option value="">New & Used Car  Dealer</option>
+                                                                <option value="">New Car  Dealer</option>
+                                                                <option value=""> Used Car  Dealer</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                                                        <div class="form-field">
+                                                            <select name="" id="" class="search-filter">
+                                                                <option value="acura">Acura</option>
+                                                    <option value="alfa-romeo">alfa-romeo</option>
+                                                    <option value="aston-martain">aston-martin</option>
+                                                    <option value="audi">audi</option>
+                                                    <option value="bently">bently</option>
+                                                    <option value="bmw">bmw</option>
+                                                    <option value="buick">buick</option>
+                                                    <option value="cardillac">cardillac</option>
+                                                    <option value="chevorlt">chevrolet</option>
+                                                    <option value="acura">Chrysler</option>
+                                                    <option value="dodge">Dodge</option>
+                                                    <option value="ferrari">Ferrari</option>
+                                                    <option value="fiat">fiat</option>
+                                                    <option value="ford">ford</option>
+                                                    <option value="genesis">genesis</option>
+                                                    <option value="gmc">gmc</option>
+                                                    <option value="honda">honda</option>
+                                                    <option value="hummer">hummer</option>
+                                                    <option value="hyundai">hyundai</option>
+                                                    <option value="infiniti">infiniti</option>
+                                                    <option value="isuzu">isuzu</option>
+                                                    <option value="jagur">jagur</option>
+                                                    <option value="Jeep">Jeep</option>
+                                                    <option value="kia">kia</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+
+
+
+
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+                                                <div class="form-field">
+                                                    <div class="areaDealers-btn">
+                                                        <button type="submit" class="form-button">Search</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </form>
+                                </div>
+                                <div class="tab-pane fade">
+                                    <form action="form-inner theme-select2-design">
+                                        <div class="row">
+                                            <div class="col-xl-12 col-md-12col-lg-12 ">
+                                                <div class="form-field">
+                                                    <div class="search-bar input-box">
+                                                        <input type="text" class="ui-autocomplete-input">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <!-- section 2 -->
+
+<section class="dealer-shop-section">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-xl-4">
+
+
+<!--  -->
+
+
+
+                    <div class="mb-3" id="toggle" >
+                        <div  class="dealer-map-grid-wrapper c-pointer h-100 border" data-action="openDealerCard">
+                            <div class="d-flex flex-column justify-content-between p-3 h-100">
+                                <div class="dealer-map-grid-content c-pointer">
+                                    <div class="dealer-map-grid-title mb-2">
+                                        <h2>Two Californias Auto Wholesale</h2>
+                                <div class="dealerMap-Range">
+                                    <span>4 mi</span>
+                                </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="d-flex align-items-center mb-1">
+                                    <div class="flex-shrink-0 d-flex align-items-center googleRatingfont">
+                                        <div class="font-14 mr-2">4.5/5</div>
+                                        <div class="overallSafetyRating mr-2">
+                                            <img src="./Image/star.png" class="img-fluid" alt="" height="14" width="14">
+                                            <img src="./Image/star.png" class="img-fluid" alt="" height="14" width="14">
+                                            <img src="./Image/star.png" class="img-fluid" alt="" height="14" width="14">
+                                            <img src="./Image/star.png" class="img-fluid" alt="" height="14" width="14">
+                                            <img src="./Image/half star.png" class="img-fluid" alt="" height="14" width="14">
+                                        </div>
+                                        <span class="font-14 c-pointer">Google (17)</span>
+                                    </div>
+                                </div>
+
+                             <div class="dealer-map-grid-info mb-1">
+                                <p class="mb-1 used">used Car dealer</p>
+                                <div class="address">
+                                    <p class="mb-1">
+                                        <a href="" target="blank">1704 C street, Livingston</a>
+                                    </p>
+                                </div>
+                             </div>
+
+                            </div>
+
+                            <div class="d-flex dealer_cta">
+                                <div class="pr-2 w-100 aresDealers-btn aresDealers-btn-inverse">
+                                    <div class="aresDealer-btn">
+                                        <button>View on Map</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+                    <div class="mb-3"  >
+                        <div class="dealer-map-grid-wrapper c-pointer h-100 border">
+                            <div class="d-flex flex-column justify-content-between p-3 h-100">
+                                <div class="dealer-map-grid-content c-pointer">
+                                    <div class="dealer-map-grid-title mb-2">
+                                        <h2>Lupita's auto sale</h2>
+                                <div class="dealerMap-Range">
+                                    <span>4 mi</span>
+                                </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="d-flex align-items-center mb-1">
+                                    <div class="flex-shrink-0 d-flex align-items-center googleRatingfont">
+                                        <div class="font-14 mr-2">4.5/5</div>
+                                        <div class="overallSafetyRating mr-2">
+                                            <img src="./Image/star.png" class="img-fluid" alt="" height="14" width="14">
+                                            <img src="./Image/star.png" class="img-fluid" alt="" height="14" width="14">
+                                            <img src="./Image/star.png" class="img-fluid" alt="" height="14" width="14">
+                                            <img src="./Image/star.png" class="img-fluid" alt="" height="14" width="14">
+                                            <img src="./Image/half star.png" class="img-fluid" alt="" height="14" width="14">
+                                        </div>
+                                        <span class="font-14 c-pointer">Google (17)</span>
+                                    </div>
+                                </div>
+
+                             <div class="dealer-map-grid-info mb-1">
+                                <p class="mb-1 used">used Car dealer</p>
+                                <div class="address">
+                                    <p class="mb-1">
+                                        <a href="" target="blank">1704 C street, Livingston</a>
+                                    </p>
+                                </div>
+                             </div>
+
+                            </div>
+
+                            <div class="d-flex dealer_cta">
+                                <div class="pr-2 w-100 aresDealers-btn aresDealers-btn-inverse">
+                                    <div class="aresDealer-btn">
+                                        <button>View on Map</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="mb-3">
+                        <div class="dealer-map-grid-wrapper c-pointer h-100 border">
+                            <div class="d-flex flex-column justify-content-between p-3 h-100">
+                                <div class="dealer-map-grid-content c-pointer">
+                                    <div class="dealer-map-grid-title mb-2">
+                                        <h2>Bonander Buick GMC</h2>
+                                <div class="dealerMap-Range">
+                                    <span>4 mi</span>
+                                </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="d-flex align-items-center mb-1">
+                                    <div class="flex-shrink-0 d-flex align-items-center googleRatingfont">
+                                        <div class="font-14 mr-2">4.5/5</div>
+                                        <div class="overallSafetyRating mr-2">
+                                            <img src="./Image/star.png" class="img-fluid" alt="" height="14" width="14">
+                                            <img src="./Image/star.png" class="img-fluid" alt="" height="14" width="14">
+                                            <img src="./Image/star.png" class="img-fluid" alt="" height="14" width="14">
+                                            <img src="./Image/star.png" class="img-fluid" alt="" height="14" width="14">
+                                            <img src="./Image/half star.png" class="img-fluid" alt="" height="14" width="14">
+                                        </div>
+                                        <span class="font-14 c-pointer">Google (17)</span>
+                                    </div>
+                                </div>
+
+                             <div class="dealer-map-grid-info mb-1">
+                                <p class="mb-1 used">used Car dealer</p>
+                                <div class="address">
+                                    <p class="mb-1">
+                                        <a href="" target="blank">1704 C street, Livingston</a>
+                                    </p>
+                                </div>
+                             </div>
+
+                            </div>
+
+                            <div class="d-flex dealer_cta">
+                                <div class="pr-2 w-100 aresDealers-btn aresDealers-btn-inverse">
+                                    <div class="aresDealer-btn">
+                                        <button>View on Map</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="mb-3">
+                        <div class="dealer-map-grid-wrapper c-pointer h-100 border">
+                            <div class="d-flex flex-column justify-content-between p-3 h-100">
+                                <div class="dealer-map-grid-content c-pointer">
+                                    <div class="dealer-map-grid-title mb-2">
+                                        <h2>Turlock Chrysler Dodge Jeep Ram</h2>
+                                <div class="dealerMap-Range">
+                                    <span>4 mi</span>
+                                </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="d-flex align-items-center mb-1">
+                                    <div class="flex-shrink-0 d-flex align-items-center googleRatingfont">
+                                        <div class="font-14 mr-2">4.5/5</div>
+                                        <div class="overallSafetyRating mr-2">
+                                            <img src="./Image/star.png" class="img-fluid" alt="" height="14" width="14">
+                                            <img src="./Image/star.png" class="img-fluid" alt="" height="14" width="14">
+                                            <img src="./Image/star.png" class="img-fluid" alt="" height="14" width="14">
+                                            <img src="./Image/star.png" class="img-fluid" alt="" height="14" width="14">
+                                            <img src="./Image/half star.png" class="img-fluid" alt="" height="14" width="14">
+                                        </div>
+                                        <span class="font-14 c-pointer">Google (17)</span>
+                                    </div>
+                                </div>
+
+                             <div class="dealer-map-grid-info mb-1">
+                                <p class="mb-1 used">used Car dealer</p>
+                                <div class="address">
+                                    <p class="mb-1">
+                                        <a href="" target="blank">1704 C street, Livingston</a>
+                                    </p>
+                                </div>
+                             </div>
+
+                            </div>
+
+                            <div class="d-flex dealer_cta">
+                                <div class="pr-2 w-100 aresDealers-btn aresDealers-btn-inverse">
+                                    <div class="aresDealer-btn">
+                                        <button>View on Map</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="mb-3">
+                        <div class="dealer-map-grid-wrapper c-pointer h-100 border">
+                            <div class="d-flex flex-column justify-content-between p-3 h-100">
+                                <div class="dealer-map-grid-content c-pointer">
+                                    <div class="dealer-map-grid-title mb-2">
+                                        <h2>Smith Chervolt of Turlock</h2>
+                                <div class="dealerMap-Range">
+                                    <span>4 mi</span>
+                                </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="d-flex align-items-center mb-1">
+                                    <div class="flex-shrink-0 d-flex align-items-center googleRatingfont">
+                                        <div class="font-14 mr-2">4.5/5</div>
+                                        <div class="overallSafetyRating mr-2">
+                                            <img src="./Image/star.png" class="img-fluid" alt="" height="14" width="14">
+                                            <img src="./Image/star.png" class="img-fluid" alt="" height="14" width="14">
+                                            <img src="./Image/star.png" class="img-fluid" alt="" height="14" width="14">
+                                            <img src="./Image/star.png" class="img-fluid" alt="" height="14" width="14">
+                                            <img src="./Image/half star.png" class="img-fluid" alt="" height="14" width="14">
+                                        </div>
+                                        <span class="font-14 c-pointer">Google (17)</span>
+                                    </div>
+                                </div>
+
+                             <div class="dealer-map-grid-info mb-1">
+                                <p class="mb-1 used">used Car dealer</p>
+                                <div class="address">
+                                    <p class="mb-1">
+                                        <a href="" target="blank">1704 C street, Livingston</a>
+                                    </p>
+                                </div>
+                             </div>
+
+                            </div>
+
+                            <div class="d-flex dealer_cta">
+                                <div class="pr-2 w-100 aresDealers-btn aresDealers-btn-inverse">
+                                    <div class="aresDealer-btn">
+                                        <button>View on Map</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="mb-3">
+                        <div class="dealer-map-grid-wrapper c-pointer h-100 border">
+                            <div class="d-flex flex-column justify-content-between p-3 h-100">
+                                <div class="dealer-map-grid-content c-pointer">
+                                    <div class="dealer-map-grid-title mb-2">
+                                        <h2>Smith cadillac of Turlock</h2>
+                                <div class="dealerMap-Range">
+                                    <span>4 mi</span>
+                                </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="d-flex align-items-center mb-1">
+                                    <div class="flex-shrink-0 d-flex align-items-center googleRatingfont">
+                                        <div class="font-14 mr-2">4.5/5</div>
+                                        <div class="overallSafetyRating mr-2">
+                                            <img src="./Image/star.png" class="img-fluid" alt="" height="14" width="14">
+                                            <img src="./Image/star.png" class="img-fluid" alt="" height="14" width="14">
+                                            <img src="./Image/star.png" class="img-fluid" alt="" height="14" width="14">
+                                            <img src="./Image/star.png" class="img-fluid" alt="" height="14" width="14">
+                                            <img src="./Image/half star.png" class="img-fluid" alt="" height="14" width="14">
+                                        </div>
+                                        <span class="font-14 c-pointer">Google (17)</span>
+                                    </div>
+                                </div>
+
+                             <div class="dealer-map-grid-info mb-1">
+                                <p class="mb-1 used">used Car dealer</p>
+                                <div class="address">
+                                    <p class="mb-1">
+                                        <a href="" target="blank">1704 C street, Livingston</a>
+                                    </p>
+                                </div>
+                             </div>
+
+                            </div>
+
+                            <div class="d-flex dealer_cta">
+                                <div class="pr-2 w-100 aresDealers-btn aresDealers-btn-inverse">
+                                    <div class="aresDealer-btn">
+                                        <button>View on Map</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="mb-3">
+                        <div class="dealer-map-grid-wrapper c-pointer h-100 border">
+                            <div class="d-flex flex-column justify-content-between p-3 h-100">
+                                <div class="dealer-map-grid-content c-pointer">
+                                    <div class="dealer-map-grid-title mb-2">
+                                        <h2>Price Ford of Turlock</h2>
+                                <div class="dealerMap-Range">
+                                    <span>4 mi</span>
+                                </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="d-flex align-items-center mb-1">
+                                    <div class="flex-shrink-0 d-flex align-items-center googleRatingfont">
+                                        <div class="font-14 mr-2">4.5/5</div>
+                                        <div class="overallSafetyRating mr-2">
+                                            <img src="./Image/star.png" class="img-fluid" alt="" height="14" width="14">
+                                            <img src="./Image/star.png" class="img-fluid" alt="" height="14" width="14">
+                                            <img src="./Image/star.png" class="img-fluid" alt="" height="14" width="14">
+                                            <img src="./Image/star.png" class="img-fluid" alt="" height="14" width="14">
+                                            <img src="./Image/half star.png" class="img-fluid" alt="" height="14" width="14">
+                                        </div>
+                                        <span class="font-14 c-pointer">Google (17)</span>
+                                    </div>
+                                </div>
+
+                             <div class="dealer-map-grid-info mb-1">
+                                <p class="mb-1 used">used Car dealer</p>
+                                <div class="address">
+                                    <p class="mb-1">
+                                        <a href="" target="blank">1704 C street, Livingston</a>
+                                    </p>
+                                </div>
+                             </div>
+
+                            </div>
+
+                            <div class="d-flex dealer_cta">
+                                <div class="pr-2 w-100 aresDealers-btn aresDealers-btn-inverse">
+                                    <div class="aresDealer-btn">
+                                        <button>View on Map</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="mb-3">
+                        <div class="dealer-map-grid-wrapper c-pointer h-100 border">
+                            <div class="d-flex flex-column justify-content-between p-3 h-100">
+                                <div class="dealer-map-grid-content c-pointer">
+                                    <div class="dealer-map-grid-title mb-2">
+                                        <h2>Blue Diamond  Auto Sales</h2>
+                                <div class="dealerMap-Range">
+                                    <span>4 mi</span>
+                                </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="d-flex align-items-center mb-1">
+                                    <div class="flex-shrink-0 d-flex align-items-center googleRatingfont">
+                                        <div class="font-14 mr-2">4.5/5</div>
+                                        <div class="overallSafetyRating mr-2">
+                                            <img src="./Image/star.png" class="img-fluid" alt="" height="14" width="14">
+                                            <img src="./Image/star.png" class="img-fluid" alt="" height="14" width="14">
+                                            <img src="./Image/star.png" class="img-fluid" alt="" height="14" width="14">
+                                            <img src="./Image/star.png" class="img-fluid" alt="" height="14" width="14">
+                                            <img src="./Image/half star.png" class="img-fluid" alt="" height="14" width="14">
+                                        </div>
+                                        <span class="font-14 c-pointer">Google (17)</span>
+                                    </div>
+                                </div>
+
+                             <div class="dealer-map-grid-info mb-1">
+                                <p class="mb-1 used">used Car dealer</p>
+                                <div class="address">
+                                    <p class="mb-1">
+                                        <a href="" target="blank">1704 C street, Livingston</a>
+                                    </p>
+                                </div>
+                             </div>
+
+                            </div>
+
+                            <div class="d-flex dealer_cta">
+                                <div class="pr-2 w-100 aresDealers-btn aresDealers-btn-inverse">
+                                    <div class="aresDealer-btn">
+                                        <button>Dealer Detail</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="mb-3">
+                        <div class="dealer-map-grid-wrapper c-pointer h-100 border">
+                            <div class="d-flex flex-column justify-content-between p-3 h-100">
+                                <div class="dealer-map-grid-content c-pointer">
+                                    <div class="dealer-map-grid-title mb-2">
+                                        <h2>Rush Truck Center, Ceres</h2>
+                                <div class="dealerMap-Range">
+                                    <span>4 mi</span>
+                                </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="d-flex align-items-center mb-1">
+                                    <div class="flex-shrink-0 d-flex align-items-center googleRatingfont">
+                                        <div class="font-14 mr-2">4.5/5</div>
+                                        <div class="overallSafetyRating mr-2">
+                                            <img src="./Image/star.png" class="img-fluid" alt="" height="14" width="14">
+                                            <img src="./Image/star.png" class="img-fluid" alt="" height="14" width="14">
+                                            <img src="./Image/star.png" class="img-fluid" alt="" height="14" width="14">
+                                            <img src="./Image/star.png" class="img-fluid" alt="" height="14" width="14">
+                                            <img src="./Image/half star.png" class="img-fluid" alt="" height="14" width="14">
+                                        </div>
+                                        <span class="font-14 c-pointer">Google (17)</span>
+                                    </div>
+                                </div>
+
+                             <div class="dealer-map-grid-info mb-1">
+                                <p class="mb-1 used">used Car dealer</p>
+                                <div class="address">
+                                    <p class="mb-1">
+                                        <a href="" target="blank">1704 C street, Livingston</a>
+                                    </p>
+                                </div>
+                             </div>
+
+                            </div>
+
+                            <div class="d-flex dealer_cta">
+                                <div class="pr-2 w-100 aresDealers-btn aresDealers-btn-inverse">
+                                    <div class="aresDealer-btn">
+                                        <button>Dealer Detail</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="mb-3">
+                        <div class="dealer-map-grid-wrapper c-pointer h-100 border">
+                            <div class="d-flex flex-column justify-content-between p-3 h-100">
+                                <div class="dealer-map-grid-content c-pointer">
+                                    <div class="dealer-map-grid-title mb-2">
+                                        <h2>Ron Smith Buick GMC</h2>
+                                <div class="dealerMap-Range">
+                                    <span>4 mi</span>
+                                </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="d-flex align-items-center mb-1">
+                                    <div class="flex-shrink-0 d-flex align-items-center googleRatingfont">
+                                        <div class="font-14 mr-2">4.5/5</div>
+                                        <div class="overallSafetyRating mr-2">
+                                            <img src="./Image/star.png" class="img-fluid" alt="" height="14" width="14">
+                                            <img src="./Image/star.png" class="img-fluid" alt="" height="14" width="14">
+                                            <img src="./Image/star.png" class="img-fluid" alt="" height="14" width="14">
+                                            <img src="./Image/star.png" class="img-fluid" alt="" height="14" width="14">
+                                            <img src="./Image/half star.png" class="img-fluid" alt="" height="14" width="14">
+                                        </div>
+                                        <span class="font-14 c-pointer">Google (17)</span>
+                                    </div>
+                                </div>
+
+                             <div class="dealer-map-grid-info mb-1">
+                                <p class="mb-1 used">used Car dealer</p>
+                                <div class="address">
+                                    <p class="mb-1">
+                                        <a href="" target="blank">1704 C street, Livingston</a>
+                                    </p>
+                                </div>
+                             </div>
+
+                            </div>
+
+                            <div class="d-flex dealer_cta">
+                                <div class="pr-2 w-100 aresDealers-btn aresDealers-btn-inverse">
+                                    <div class="aresDealer-btn">
+                                        <button>Dealer Details</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="mb-3">
+                        <div class="dealer-map-grid-wrapper c-pointer h-100 border">
+                            <div class="d-flex flex-column justify-content-between p-3 h-100">
+                                <div class="dealer-map-grid-content c-pointer">
+                                    <div class="dealer-map-grid-title mb-2">
+                                        <h2>Merced Honda</h2>
+                                <div class="dealerMap-Range">
+                                    <span>4 mi</span>
+                                </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="d-flex align-items-center mb-1">
+                                    <div class="flex-shrink-0 d-flex align-items-center googleRatingfont">
+                                        <div class="font-14 mr-2">4.5/5</div>
+                                        <div class="overallSafetyRating mr-2">
+                                            <img src="./Image/star.png" class="img-fluid" alt="" height="14" width="14">
+                                            <img src="./Image/star.png" class="img-fluid" alt="" height="14" width="14">
+                                            <img src="./Image/star.png" class="img-fluid" alt="" height="14" width="14">
+                                            <img src="./Image/star.png" class="img-fluid" alt="" height="14" width="14">
+                                            <img src="./Image/half star.png" class="img-fluid" alt="" height="14" width="14">
+                                        </div>
+                                        <span class="font-14 c-pointer">Google (17)</span>
+                                    </div>
+                                </div>
+
+                             <div class="dealer-map-grid-info mb-1">
+                                <p class="mb-1 used">used Car dealer</p>
+                                <div class="address">
+                                    <p class="mb-1">
+                                        <a href="" target="blank">1704 C street, Livingston</a>
+                                    </p>
+                                </div>
+                             </div>
+
+                            </div>
+
+                            <div class="d-flex dealer_cta">
+                                <div class="pr-2 w-100 aresDealers-btn aresDealers-btn-inverse">
+                                    <div class="aresDealer-btn">
+                                        <button>Dealer Detail</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="mb-3">
+                        <div class="dealer-map-grid-wrapper c-pointer h-100 border">
+                            <div class="d-flex flex-column justify-content-between p-3 h-100">
+                                <div class="dealer-map-grid-content c-pointer">
+                                    <div class="dealer-map-grid-title mb-2">
+                                        <h2>United Automotive</h2>
+                                <div class="dealerMap-Range">
+                                    <span>4 mi</span>
+                                </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="d-flex align-items-center mb-1">
+                                    <div class="flex-shrink-0 d-flex align-items-center googleRatingfont">
+                                        <div class="font-14 mr-2">4.5/5</div>
+                                        <div class="overallSafetyRating mr-2">
+                                            <img src="./Image/star.png" class="img-fluid" alt="" height="14" width="14">
+                                            <img src="./Image/star.png" class="img-fluid" alt="" height="14" width="14">
+                                            <img src="./Image/star.png" class="img-fluid" alt="" height="14" width="14">
+                                            <img src="./Image/star.png" class="img-fluid" alt="" height="14" width="14">
+                                            <img src="./Image/half star.png" class="img-fluid" alt="" height="14" width="14">
+                                        </div>
+                                        <span class="font-14 c-pointer">Google (17)</span>
+                                    </div>
+                                </div>
+
+                             <div class="dealer-map-grid-info mb-1">
+                                <p class="mb-1 used">used Car dealer</p>
+                                <div class="address">
+                                    <p class="mb-1">
+                                        <a href="" target="blank">1704 C street, Livingston</a>
+                                    </p>
+                                </div>
+                             </div>
+
+                            </div>
+
+                            <div class="d-flex dealer_cta">
+                                <div class="pr-2 w-100 aresDealers-btn aresDealers-btn-inverse">
+                                    <div class="aresDealer-btn">
+                                        <button>Dealer Detail</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="mb-3">
+                        <div class="dealer-map-grid-wrapper c-pointer h-100 border">
+                            <div class="d-flex flex-column justify-content-between p-3 h-100">
+                                <div class="dealer-map-grid-content c-pointer">
+                                    <div class="dealer-map-grid-title mb-2">
+                                        <h2>Merced Toyota</h2>
+                                <div class="dealerMap-Range">
+                                    <span>4 mi</span>
+                                </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="d-flex align-items-center mb-1">
+                                    <div class="flex-shrink-0 d-flex align-items-center googleRatingfont">
+                                        <div class="font-14 mr-2">4.5/5</div>
+                                        <div class="overallSafetyRating mr-2">
+                                            <img src="./Image/star.png" class="img-fluid" alt="" height="14" width="14">
+                                            <img src="./Image/star.png" class="img-fluid" alt="" height="14" width="14">
+                                            <img src="./Image/star.png" class="img-fluid" alt="" height="14" width="14">
+                                            <img src="./Image/star.png" class="img-fluid" alt="" height="14" width="14">
+                                            <img src="./Image/half star.png" class="img-fluid" alt="" height="14" width="14">
+                                        </div>
+                                        <span class="font-14 c-pointer">Google (17)</span>
+                                    </div>
+                                </div>
+
+                             <div class="dealer-map-grid-info mb-1">
+                                <p class="mb-1 used">used Car dealer</p>
+                                <div class="address">
+                                    <p class="mb-1">
+                                        <a href="" target="blank">1704 C street, Livingston</a>
+                                    </p>
+                                </div>
+                             </div>
+
+                            </div>
+
+                            <div class="d-flex dealer_cta">
+                                <div class="pr-2 w-100 aresDealers-btn aresDealers-btn-inverse">
+                                    <div class="aresDealer-btn">
+                                        <button>Dealer Detail</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="mb-3">
+                        <div class="dealer-map-grid-wrapper c-pointer h-100 border">
+                            <div class="d-flex flex-column justify-content-between p-3 h-100">
+                                <div class="dealer-map-grid-content c-pointer">
+                                    <div class="dealer-map-grid-title mb-2">
+                                        <h2>The Razzari Auto Centers</h2>
+                                <div class="dealerMap-Range">
+                                    <span>4 mi</span>
+                                </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="d-flex align-items-center mb-1">
+                                    <div class="flex-shrink-0 d-flex align-items-center googleRatingfont">
+                                        <div class="font-14 mr-2">4.5/5</div>
+                                        <div class="overallSafetyRating mr-2">
+                                            <img src="./Image/star.png" class="img-fluid" alt="" height="14" width="14">
+                                            <img src="./Image/star.png" class="img-fluid" alt="" height="14" width="14">
+                                            <img src="./Image/star.png" class="img-fluid" alt="" height="14" width="14">
+                                            <img src="./Image/star.png" class="img-fluid" alt="" height="14" width="14">
+                                            <img src="./Image/half star.png" class="img-fluid" alt="" height="14" width="14">
+                                        </div>
+                                        <span class="font-14 c-pointer">Google (17)</span>
+                                    </div>
+                                </div>
+
+                             <div class="dealer-map-grid-info mb-1">
+                                <p class="mb-1 used">used Car dealer</p>
+                                <div class="address">
+                                    <p class="mb-1">
+                                        <a href="" target="blank">1704 C street, Livingston</a>
+                                    </p>
+                                </div>
+                             </div>
+
+                            </div>
+
+                            <div class="d-flex dealer_cta">
+                                <div class="pr-2 w-100 aresDealers-btn aresDealers-btn-inverse">
+                                    <div class="aresDealer-btn">
+                                        <button>Dealer Detail</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="mb-3">
+                        <div class="dealer-map-grid-wrapper c-pointer h-100 border">
+                            <div class="d-flex flex-column justify-content-between p-3 h-100">
+                                <div class="dealer-map-grid-content c-pointer">
+                                    <div class="dealer-map-grid-title mb-2">
+                                        <h2>Razzari Ford</h2>
+                                <div class="dealerMap-Range">
+                                    <span>4 mi</span>
+                                </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="d-flex align-items-center mb-1">
+                                    <div class="flex-shrink-0 d-flex align-items-center googleRatingfont">
+                                        <div class="font-14 mr-2">4.5/5</div>
+                                        <div class="overallSafetyRating mr-2">
+                                            <img src="./Image/star.png" class="img-fluid" alt="" height="14" width="14">
+                                            <img src="./Image/star.png" class="img-fluid" alt="" height="14" width="14">
+                                            <img src="./Image/star.png" class="img-fluid" alt="" height="14" width="14">
+                                            <img src="./Image/star.png" class="img-fluid" alt="" height="14" width="14">
+                                            <img src="./Image/half star.png" class="img-fluid" alt="" height="14" width="14">
+                                        </div>
+                                        <span class="font-14 c-pointer">Google (17)</span>
+                                    </div>
+                                </div>
+
+                             <div class="dealer-map-grid-info mb-1">
+                                <p class="mb-1 used">used Car dealer</p>
+                                <div class="address">
+                                    <p class="mb-1">
+                                        <a href="" target="blank">1704 C street, Livingston</a>
+                                    </p>
+                                </div>
+                             </div>
+
+                            </div>
+
+                            <div class="d-flex dealer_cta">
+                                <div class="pr-2 w-100 aresDealers-btn aresDealers-btn-inverse">
+                                    <div class="aresDealer-btn">
+                                        <button>Dealer Detail</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="mb-3">
+                        <div class="dealer-map-grid-wrapper c-pointer h-100 border">
+                            <div class="d-flex flex-column justify-content-between p-3 h-100">
+                                <div class="dealer-map-grid-content c-pointer">
+                                    <div class="dealer-map-grid-title mb-2">
+                                        <h2>Merced KIA</h2>
+                                <div class="dealerMap-Range">
+                                    <span>4 mi</span>
+                                </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="d-flex align-items-center mb-1">
+                                    <div class="flex-shrink-0 d-flex align-items-center googleRatingfont">
+                                        <div class="font-14 mr-2">4.5/5</div>
+                                        <div class="overallSafetyRating mr-2">
+                                            <img src="./Image/star.png" class="img-fluid" alt="" height="14" width="14">
+                                            <img src="./Image/star.png" class="img-fluid" alt="" height="14" width="14">
+                                            <img src="./Image/star.png" class="img-fluid" alt="" height="14" width="14">
+                                            <img src="./Image/star.png" class="img-fluid" alt="" height="14" width="14">
+                                            <img src="./Image/half star.png" class="img-fluid" alt="" height="14" width="14">
+                                        </div>
+                                        <span class="font-14 c-pointer">Google (17)</span>
+                                    </div>
+                                </div>
+
+                             <div class="dealer-map-grid-info mb-1">
+                                <p class="mb-1 used">used Car dealer</p>
+                                <div class="address">
+                                    <p class="mb-1">
+                                        <a href="" target="blank">1704 C street, Livingston</a>
+                                    </p>
+                                </div>
+                             </div>
+
+                            </div>
+
+                            <div class="d-flex dealer_cta">
+                                <div class="pr-2 w-100 aresDealers-btn aresDealers-btn-inverse">
+                                    <div class="aresDealer-btn">
+                                        <button>Dealer Details</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="mb-3">
+                        <div class="dealer-map-grid-wrapper c-pointer h-100 border">
+                            <div class="d-flex flex-column justify-content-between p-3 h-100">
+                                <div class="dealer-map-grid-content c-pointer">
+                                    <div class="dealer-map-grid-title mb-2">
+                                        <h2>Merced VW</h2>
+                                <div class="dealerMap-Range">
+                                    <span>4 mi</span>
+                                </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="d-flex align-items-center mb-1">
+                                    <div class="flex-shrink-0 d-flex align-items-center googleRatingfont">
+                                        <div class="font-14 mr-2">4.5/5</div>
+                                        <div class="overallSafetyRating mr-2">
+                                            <img src="./Image/star.png" class="img-fluid" alt="" height="14" width="14">
+                                            <img src="./Image/star.png" class="img-fluid" alt="" height="14" width="14">
+                                            <img src="./Image/star.png" class="img-fluid" alt="" height="14" width="14">
+                                            <img src="./Image/star.png" class="img-fluid" alt="" height="14" width="14">
+                                            <img src="./Image/half star.png" class="img-fluid" alt="" height="14" width="14">
+                                        </div>
+                                        <span class="font-14 c-pointer">Google (17)</span>
+                                    </div>
+                                </div>
+
+                             <div class="dealer-map-grid-info mb-1">
+                                <p class="mb-1 used">used Car dealer</p>
+                                <div class="address">
+                                    <p class="mb-1">
+                                        <a href="" target="blank">1704 C street, Livingston</a>
+                                    </p>
+                                </div>
+                             </div>
+
+                            </div>
+
+                            <div class="d-flex dealer_cta">
+                                <div class="pr-2 w-100 aresDealers-btn aresDealers-btn-inverse">
+                                    <div class="aresDealer-btn">
+                                        <button>View on Map</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="mb-3">
+                        <div class="dealer-map-grid-wrapper c-pointer h-100 border">
+                            <div class="d-flex flex-column justify-content-between p-3 h-100">
+                                <div class="dealer-map-grid-content c-pointer">
+                                    <div class="dealer-map-grid-title mb-2">
+                                        <h2>Merced Volkswagen</h2>
+                                <div class="dealerMap-Range">
+                                    <span>4 mi</span>
+                                </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="d-flex align-items-center mb-1">
+                                    <div class="flex-shrink-0 d-flex align-items-center googleRatingfont">
+                                        <div class="font-14 mr-2">4.5/5</div>
+                                        <div class="overallSafetyRating mr-2">
+                                            <img src="./Image/star.png" class="img-fluid" alt="" height="14" width="14">
+                                            <img src="./Image/star.png" class="img-fluid" alt="" height="14" width="14">
+                                            <img src="./Image/star.png" class="img-fluid" alt="" height="14" width="14">
+                                            <img src="./Image/star.png" class="img-fluid" alt="" height="14" width="14">
+                                            <img src="./Image/half star.png" class="img-fluid" alt="" height="14" width="14">
+                                        </div>
+                                        <span class="font-14 c-pointer">Google (17)</span>
+                                    </div>
+                                </div>
+
+                             <div class="dealer-map-grid-info mb-1">
+                                <p class="mb-1 used">used Car dealer</p>
+                                <div class="address">
+                                    <p class="mb-1">
+                                        <a href="" target="blank">1704 C street, Livingston</a>
+                                    </p>
+                                </div>
+                             </div>
+
+                            </div>
+
+                            <div class="d-flex dealer_cta">
+                                <div class="pr-2 w-100 aresDealers-btn aresDealers-btn-inverse">
+                                    <div class="aresDealer-btn">
+                                        <button>View on Map</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="mb-3">
+                        <div class="dealer-map-grid-wrapper c-pointer h-100 border">
+                            <div class="d-flex flex-column justify-content-between p-3 h-100">
+                                <div class="dealer-map-grid-content c-pointer">
+                                    <div class="dealer-map-grid-title mb-2">
+                                        <h2>Merced Chevrolet</h2>
+                                <div class="dealerMap-Range">
+                                    <span>4 mi</span>
+                                </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="d-flex align-items-center mb-1">
+                                    <div class="flex-shrink-0 d-flex align-items-center googleRatingfont">
+                                        <div class="font-14 mr-2">4.5/5</div>
+                                        <div class="overallSafetyRating mr-2">
+                                            <img src="./Image/star.png" class="img-fluid" alt="" height="14" width="14">
+                                            <img src="./Image/star.png" class="img-fluid" alt="" height="14" width="14">
+                                            <img src="./Image/star.png" class="img-fluid" alt="" height="14" width="14">
+                                            <img src="./Image/star.png" class="img-fluid" alt="" height="14" width="14">
+                                            <img src="./Image/half star.png" class="img-fluid" alt="" height="14" width="14">
+                                        </div>
+                                        <span class="font-14 c-pointer">Google (17)</span>
+                                    </div>
+                                </div>
+
+                             <div class="dealer-map-grid-info mb-1">
+                                <p class="mb-1 used">used Car dealer</p>
+                                <div class="address">
+                                    <p class="mb-1">
+                                        <a href="" target="blank">1704 C street, Livingston</a>
+                                    </p>
+                                </div>
+                             </div>
+
+                            </div>
+
+                            <div class="d-flex dealer_cta">
+                                <div class="pr-2 w-100 aresDealers-btn aresDealers-btn-inverse">
+                                    <div class="aresDealer-btn">
+                                        <button>View on Map</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="mb-3">
+                        <div class="dealer-map-grid-wrapper c-pointer h-100 border">
+                            <div class="d-flex flex-column justify-content-between p-3 h-100">
+                                <div class="dealer-map-grid-content c-pointer">
+                                    <div class="dealer-map-grid-title mb-2">
+                                        <h2>Razzari Dodge Chrysler Jeep</h2>
+                                <div class="dealerMap-Range">
+                                    <span>4 mi</span>
+                                </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="d-flex align-items-center mb-1">
+                                    <div class="flex-shrink-0 d-flex align-items-center googleRatingfont">
+                                        <div class="font-14 mr-2">4.5/5</div>
+                                        <div class="overallSafetyRating mr-2">
+                                            <img src="./Image/star.png" class="img-fluid" alt="" height="14" width="14">
+                                            <img src="./Image/star.png" class="img-fluid" alt="" height="14" width="14">
+                                            <img src="./Image/star.png" class="img-fluid" alt="" height="14" width="14">
+                                            <img src="./Image/star.png" class="img-fluid" alt="" height="14" width="14">
+                                            <img src="./Image/half star.png" class="img-fluid" alt="" height="14" width="14">
+                                        </div>
+                                        <span class="font-14 c-pointer">Google (17)</span>
+                                    </div>
+                                </div>
+
+                             <div class="dealer-map-grid-info mb-1">
+                                <p class="mb-1 used">used Car dealer</p>
+                                <div class="address">
+                                    <p class="mb-1">
+                                        <a href="" target="blank">1704 C street, Livingston</a>
+                                    </p>
+                                </div>
+                             </div>
+
+                            </div>
+
+                            <div class="d-flex dealer_cta">
+                                <div class="pr-2 w-100 aresDealers-btn aresDealers-btn-inverse">
+                                    <div class="aresDealer-btn">
+                                        <button>View on Map</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    </div>
+                    <div class="col-xl-8">
+                        <div class="dealer-map-view">
+                            <div class="dummy-map d-flex justify-content-center align-items-center">
+                                <div class="aresDealer-btn">
+                                    <button>View on Map</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+<!--  -->
+
+<!--  -->
+        <div class="dealer-detail-card-outer active">
+            <div class="card-outer-sticky d-none " id="main">
+                <div class="__Sticky_top">
+                    <div class="card__inner custom-slim-scroll">
+                        <span class="close-dealer-card c-pointer">
+                            <span data-filter="close-card">
+                                <img class="img-fluid" src="./Image/canell.png" alt="">
+                            </span>
+                        </span>
+                        <div class="dealer-detail-card  shadow">
+                            <div class="dealer-map-grid-wrapper">
+                                <div class="dealer-map-grid-img d-flex">
+                                    <a href=""></a>
+                                    <div class="dealer-map-grid-img-inner w-100 border-0">
+                                        <img class="img-fluid" src="./Image/dealer-image-not-available.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column border-bottom px-3">
+                                    <div class="dealer-map-grid-content p-0 pt-3 pb-2">
+                                        <div class="dealer-map-grid-title d-flex justify-content-between mb-2">
+                                            <h2>Two Californias Auto Wholesale</h2>
+                                        </div>
+                                        <div class="d-flex align-items-center mb-1">
+                                            <div class="flex-shrink-0 d-flex align-items-center">
+                                                <div class="font-14 mr-2">4.5/5</div>
+                                        <div class="overallSafetyRating mr-2">
+                                            <img src="./Image/star.png" class="img-fluid" alt="" height="14" width="14">
+                                            <img src="./Image/star.png" class="img-fluid" alt="" height="14" width="14">
+                                            <img src="./Image/star.png" class="img-fluid" alt="" height="14" width="14">
+                                            <img src="./Image/star.png" class="img-fluid" alt="" height="14" width="14">
+                                            <img src="./Image/half star.png" class="img-fluid" alt="" height="14" width="14">
+                                        </div>
+                                        <a href="" class="c-pointer">Google Reviews</a>
+                                            </div>
+                                        </div>
+                                        <div class="dealer-map-grid-info mb-1">
+                                            <p class="mb-1 used">used Car dealer</p>
+                                            <div class="address">
+                                                <p class="mb-1">
+                                                    <a href="" target="blank">1704 C street, Livingston</a>
+                                                </p>
+                                            </div>
+                                         </div>
+
+
+
+                                    </div>
+                                </div>
+
+
+                                <div class="py-3 seoMenus border-bottom px-3">
+                                    <button class="__inner">
+                                        <img class="img-fluid" src="./Image/earth.png" alt="">
+                                        <span class="mt-2">website</span>
+                                    </button>
+                                </div>
+
+
+                                <div class="dealerReview">
+                                    <div class="pt-3 px-3">
+                                        <h3 class="font-14 mb-3">Reviews</h3>
+                                        <div class="d-flex align-items-center mb-1">
+                                            <div class="flex-shrink-0 d-flex align-items-center">
+                                                <div class="mr-2">
+                                                    <img class="img-fluid" src="./Image/google.png" alt="">
+                                                </div>
+                                                <div class="d-flex flex-column flex-sm-row">
+                                                    <span class="mr-2">Google</span>
+                                                    <div class="d-flex">
+                                                        <div class="font-14 mr-2">4.5/5</div>
+                                                       
+                                                        <div class="overallSafetyRating mr-2">
+                                                            <img src="./Image/star.png" class="img-fluid" alt="" height="14" width="14">
+                                                            <img src="./Image/star.png" class="img-fluid" alt="" height="14" width="14">
+                                                            <img src="./Image/star.png" class="img-fluid" alt="" height="14" width="14">
+                                                            <img src="./Image/star.png" class="img-fluid" alt="" height="14" width="14">
+                                                            <img src="./Image/half star.png" class="img-fluid" alt="" height="14" width="14">
+                                                        </div>
+                                                        <span class="font-14">Review 17</span>
+
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
+                                        <div class="bg-light p-3 mt-4">
+                                            <time class="mb-2 d-block text-dark">About 2 year</time>
+                                            <p class="m-0 addReadMore showlesscontent">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, porro eaque eos labore facere consequuntur accusantium incidunt perferendis temporibus aperiam adipisci doloribus impedit, atque optio laudantium, voluptatibus nisi saepe rem.
+
+                                            
+                                            <span class="readMore" title="click to show more">.. Read More</span>
+                                        </p>
+                                        </div>
+
+                                        <div class="bg-light p-3 mt-4">
+                                            <time class="mb-2 d-block text-dark">About 3 year</time>
+                                            <p class="m-0 addReadMore showlesscontent">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, porro eaque eos labore facere consequuntur accusantium incidunt perferendis temporibus aperiam adipisci doloribus impedit, atque optio laudantium, voluptatibus nisi saepe rem.
+
+                                            
+                                            <span class="readMore" title="click to show more">.. Read More</span>
+                                        </p>
+                                        </div>
+
+                                        <div class="bg-light p-3 mt-4">
+                                            <time class="mb-2 d-block text-dark">About 4 year</time>
+                                            <p class="m-0 addReadMore showlesscontent">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, porro eaque eos labore facere consequuntur accusantium incidunt perferendis temporibus aperiam adipisci doloribus impedit, atque optio laudantium, voluptatibus nisi saepe rem.
+
+                                            
+                                            <span class="readMore" title="click to show more">.. Read More</span>
+                                        </p>
+                                        </div>
+
+                                        <div class="bg-light p-3 mt-4">
+                                            <time class="mb-2 d-block text-dark">About 6 year</time>
+                                            <p class="m-0 addReadMore showlesscontent">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, porro eaque eos labore facere consequuntur accusantium incidunt perferendis temporibus aperiam adipisci doloribus impedit, atque optio laudantium, voluptatibus nisi saepe rem.
+
+                                            
+                                            <span class="readMore" title="click to show more">.. Read More</span>
+                                        </p>
+                                        </div>
+                                        <div class="py-3 text-center">
+                                            <a href="">Show all review</a>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+        </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- footer -->
+
+<footer class="footer_area">
+    <div class="container-mid">
+        <div class="row">
+
+            <div class="col-xl-3  col-md-3 col-lg-3">
+                <div class="single-footer-widget ">
+
+                    <h6 class="widget-title">Buying & Selling</h6>
+
+                    <div class="footer_menu">
+                        <nav>
+                            <ul>
+                                <li class="menu-item"><a href="#">Home</a></li>
+                                <li><a href="#">Car For Sale</a></li>
+                                <li><a href="#">Sell My car</a></li>
+                                <li><a href="#">Car Research</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3  col-md-3 col-lg-3">
+                <div class="single-footer-widget ">
+
+                    <h6 class="widget-title">Our Company</h6>
+
+                    <div class="footer_menu">
+                        <nav>
+                            <ul>
+                                <li><a href="#">Claim your Dealership</a></li>
+                                <li><a href="#">Advertise with us</a></li>
+                                <li><a href="#">Manage your Dealership</a></li>
+                                <li><a href="#">Contact & Support</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-3  col-md-3 col-lg-3">
+                <div class="single-footer-widget">
+
+                    <h6 class="widget-title">Dealership</h6>
+
+                    <div class="footer_menu">
+                        <nav>
+                            <ul>
+                                <li><a href="#">Find Car Dealership By Make</a></li>
+                                <li><a href="#">Find Car Dealership By State</a></li>
+                                <li><a href="#">Find Car Dealership Near Me</a></li>
+
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-3  col-md-3 col-lg-3 ">
+                <div class="single-footer-widget ">
+
+                    <h6 class="widget-title">Terms & Privacy Policy</h6>
+
+                    <div class="footer_menu">
+                        <nav>
+                            <ul>
+                                <li><a href="#">Accessibility Statement</a></li>
+                                <li><a href="#">CCPA Privacy Notice</a></li>
+                                <li><a href="#">Privacy Statement</a></li>
+                                <li><a href="#">Shine the Light</a></li>
+                                <li><a href="#">Terms and Conditions</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+
+
+
+</footer>
+<div class="copywrite-section">
+    <div class="container-mid">
+        <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                <div class="copywrite-content text-center">
+                    <p>
+                        © and ™ Car Dealerships, Inc. All rights reserved. Vehicle photos © Evox Images © VinQuery
+                        Solutions, © DataOne, © VinAudit, © ip-api.com
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 
+    <script>
+
+        function show(){
+      
+           const bodytag =  document.getElementById("main")
+             bodytag.classList.toggle('.show')
+        }
+       
+      
+      </script> -->
+
+    <script>
+          const targetDiv = document.getElementById("main");
+const btn = document.getElementById("toggle");
+btn.onclick = function () {
+  if (targetDiv.style.display !== "none") {
+    targetDiv.style.display = "none";
+  } else {
+    targetDiv.style.display = "block";
+  }
+};
+
+    </script>
+
+
+<script>
+
+    function overflowhidden(){
+  
+       const bodytag =  document.getElementById("body")
+         bodytag.classList.toggle('overflow-hidden')
+    }
+   
+  
+  </script>
+
+    

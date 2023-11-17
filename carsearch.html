@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Car Dealerships</title>
+    <link rel="stylesheet" href="./CSS/bootstrap.css">
+    <script src="./Javascript/jquery.js"></script>
+    <script src="./Javascript/poper.js"></script>
+    <script src="./Javascript/bootstrap.js"></script>
+    <script src="./Javascript/script.js"></script>
+    <script src="https://kit.fontawesome.com/3a9051686c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./CSS/Style.css">
+    <link rel="stylesheet" href="./CSS/sale.css">
+    <link rel="stylesheet" href="./CSS/car-research.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="https://fontawesome.com/icons/arrow-right?f=classic&s=solid">
+
+
+
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container-mid">
+            <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand" href="index.html">
+                    <img class="img-fluid" src="./Image/cardealerships.webp" alt="logo Ahhpc" href="index.html">
+                </a>
+
+                <div class="location-section" id="button">
+                    <span class="location">
+                        <img class="img-fluid" src="./Image/icons8-location-50.png" alt="">
+                    </span>
+                    <span>Delhi ,IA</span>
+                </div>
+
+                <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around ml-auto "
+                    type="button" data-toggle="collapse" data-target="#myname" aria-expanded="false"
+                    aria-label="Toggle navigation" id="button">
+                    <span class="toggler-icon top-bar text-center"></span>
+                    <span class="toggler-icon middle-bar text-center"></span>
+                    <span class="toggler-icon bottom-bar text-center"></span>
+                </button>
+
+                <div class="collapse navbar-collapse " id="myname">
+                    <ul class="navbar-nav  ml-auto text-center">
+                        <li class="nav-item "><a class="nav-link active drop-item " href="index.html">Home</a></li>
+                        <li class="nav-item drop-menu"><a class="nav-link  drop-items" href="sale.html">Cars For
+                                Sale</a></li>
+                        <li class="nav-item drop-menu"><a class="nav-link  drop-items" href="cardealer.html">Car Dealers</a></li>
+                        <li class="nav-item drop-menu"><a class="nav-link  drop-items" href="carsearch.html">Car Research</a></li>
+                        <li class="nav-item drop-menu"><a class="nav-link  drop-items" href="sell.html">Sell My Car</a></li>
+                        <li class="nav-item drop-menu"><a class="nav-link  drop-items" href="#">Blog</a></li>
+                        <button class="nav-wishlist-btn" data-action="openWishlistSlide">
+                            <img class="img-fluid"
+                                src="https://storage.googleapis.com/global-slt/classifieds-assets/images/wishlist.svg"
+                                alt="Vechile-Whislist">
+                            <span>0</span>
+                        </button>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- section 1 -->
+
+
+    <section class="car-research-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-12 text-center">
+                    <div class="car-headings">
+                    <h1>Research and Reviews</h1>
+                </div>
+                </div>
+            </div>
+            <form action="" class="research-form">
+                <div class="car-researchform">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-3">
+                            <select  class="custom-select">
+                                <option value="">Select Make</option>
+                                <option value="acura">Acura</option>
+                                                    <option value="alfa-romeo">alfa-romeo</option>
+                                                    <option value="aston-martain">aston-martin</option>
+                                                    <option value="audi">audi</option>
+                                                    <option value="bently">bently</option>
+                                                    <option value="bmw">bmw</option>
+                                                    <option value="buick">buick</option>
+                                                    <option value="cardillac">cardillac</option>
+                                                    <option value="chevorlt">chevrolet</option>
+                                                    <option value="acura">Chrysler</option>
+                                                    <option value="dodge">Dodge</option>
+                                                    <option value="ferrari">Ferrari</option>
+                                                    <option value="fiat">fiat</option>
+                                                    <option value="ford">ford</option>
+                                                    <option value="genesis">genesis</option>
+                                                    <option value="gmc">gmc</option>
+                                                    <option value="honda">honda</option>
+                                                    <option value="hummer">hummer</option>
+                                                    <option value="hyundai">hyundai</option>
+                                                    <option value="infiniti">infiniti</option>
+                                                    <option value="isuzu">isuzu</option>
+                                                    <option value="jagur">jagur</option>
+                                                    <option value="Jeep">Jeep</option>
+                                                    <option value="kia">kia</option>
+                                                    <option value="lamborgini">lamborini</option>
+                                                    <option value="land-rover">land-rover</option>
+                                                    <option value="lexus">lexus</option>
+                                                    <option value="lincoln">Lincoln</option>
+                                                    <option value="lotus">lotus</option>
+                                                    <option value="volvo">Volvo</option>
+                                                    <option value="maserati">maserati</option>
+                                                    <option value="mazda">mazda</option>
+                                                    <option value="mercury">Mercury</option>
+                                                    <option value="mercedes-benz">Mercedes-benz</option>
+                                                    <option value="mini">mini</option>
+                                                    <option value="plymouth">plymouth</option>
+                                                    <option value="Ram">Ram</option>
+                                                    <option value="Saab">Saab</option>
+                                                    <option value="Toyota">Toyota</option>
+                                                    <option value="Tesla">Tesla</option>
+                            </select>
+                        </div>
+
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-3">
+                            <select  class="custom-select">
+                                <option value="">Select Modal</option>
+                               </select>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-3">
+                            <select  class="custom-select">
+                                <option value="">Select Year</option>
+                               </select>
+                        </div>
+
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-3">
+                           <button class="themeBtn" type="submit" disabled="">Go</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </section>
+
+    <!-- section 2  -->
+
+    <section class="car-news">
+         <div class="container-mid">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-12 car-headings">
+                    <h2>Latest Car News and Insights</h2>
+                </div>
+                <div class="col-12 col-sm-12 col-md-4 pb-3">
+                    <a class="review" href="">
+                        <div class="review-img">
+                            <img class="img-fluid" src="./Image/review1.jpg" alt="">
+                            <span class="review-category">Reviews</span>
+                        </div>
+                        <div class="review-details">
+                            <p class="review-block-title">2024 Subaru Impreza AWD Hatchback</p>
+                            <p class="review-block-para">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis aliquam inventore, odio beatae voluptas magni dolorum totam at dolore repellat!
+                            </p>
+                            <span class="author">Review by agnibhu</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-4 pb-3">
+                    <a class="review" href="">
+                        <div class="review-img">
+                            <img class="img-fluid" src="./Image/review2.png" alt="">
+                            <span class="review-category">Reviews</span>
+                        </div>
+                        <div class="review-details">
+                            <p class="review-block-title">2024 Subaru Impreza AWD Hatchback</p>
+                            <p class="review-block-para">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis aliquam inventore, odio beatae voluptas magni dolorum totam at dolore repellat!
+                            </p>
+                            <span class="author">Review by agnibhu</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-4 pb-3">
+                    <a class="review" href="">
+                        <div class="review-img">
+                            <img class="img-fluid" src="./Image/review1.jpg" alt="">
+                            <span class="review-category">Reviews</span>
+                        </div>
+                        <div class="review-details">
+                            <p class="review-block-title">2024 Subaru Impreza AWD Hatchback</p>
+                            <p class="review-block-para">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis aliquam inventore, odio beatae voluptas magni dolorum totam at dolore repellat!
+                            </p>
+                            <span class="author">Review by agnibhu</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 text-center mt-5 pb-5">
+                    <a href="" class="reviewblock-btn">See All Expert Review</a>
+                </div>
+            </div>
+         </div>
+
+    </section>
+
+    <!-- footer -->
+
+
+    
+    <footer class="footer_area">
+        <div class="container-mid">
+            <div class="row">
+
+                <div class="col-xl-3  col-md-3 col-lg-3">
+                    <div class="single-footer-widget ">
+
+                        <h6 class="widget-title">Buying & Selling</h6>
+
+                        <div class="footer_menu">
+                            <nav>
+                                <ul>
+                                    <li class="menu-item"><a href="#">Home</a></li>
+                                    <li><a href="#">Car For Sale</a></li>
+                                    <li><a href="#">Sell My car</a></li>
+                                    <li><a href="#">Car Research</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3  col-md-3 col-lg-3">
+                    <div class="single-footer-widget ">
+
+                        <h6 class="widget-title">Our Company</h6>
+
+                        <div class="footer_menu">
+                            <nav>
+                                <ul>
+                                    <li><a href="#">Claim your Dealership</a></li>
+                                    <li><a href="#">Advertise with us</a></li>
+                                    <li><a href="#">Manage your Dealership</a></li>
+                                    <li><a href="#">Contact & Support</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3  col-md-3 col-lg-3">
+                    <div class="single-footer-widget">
+
+                        <h6 class="widget-title">Dealership</h6>
+
+                        <div class="footer_menu">
+                            <nav>
+                                <ul>
+                                    <li><a href="#">Find Car Dealership By Make</a></li>
+                                    <li><a href="#">Find Car Dealership By State</a></li>
+                                    <li><a href="#">Find Car Dealership Near Me</a></li>
+
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3  col-md-3 col-lg-3 ">
+                    <div class="single-footer-widget ">
+
+                        <h6 class="widget-title">Terms & Privacy Policy</h6>
+
+                        <div class="footer_menu">
+                            <nav>
+                                <ul>
+                                    <li><a href="#">Accessibility Statement</a></li>
+                                    <li><a href="#">CCPA Privacy Notice</a></li>
+                                    <li><a href="#">Privacy Statement</a></li>
+                                    <li><a href="#">Shine the Light</a></li>
+                                    <li><a href="#">Terms and Conditions</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+
+
+
+    </footer>
+    <div class="copywrite-section">
+        <div class="container-mid">
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                    <div class="copywrite-content text-center">
+                        <p>
+                            © and ™ Car Dealerships, Inc. All rights reserved. Vehicle photos © Evox Images © VinQuery
+                            Solutions, © DataOne, © VinAudit, © ip-api.com
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+</body>
+
+</html>
